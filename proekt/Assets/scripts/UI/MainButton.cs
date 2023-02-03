@@ -7,16 +7,30 @@ using UnityEngine.UI;
 public class MainButton : MonoBehaviour
 {
     [SerializeField] private Button _button;
+    [SerializeField] private Button _button4lvlup;
     [SerializeField] private TMP_Text _text;
-    public int coins;
+    private int coins;
+    private int f = 1;
+    private int st = 10;
     void Start()
     {
         _button.onClick.AddListener(ZachislenieMonet);
+        _button4lvlup.onClick.AddListener(lvlup);
     }
     // Update is called once per frame
+    void lvlup()
+    {
+        if (coins >= st)
+        {
+            f++;
+            coins = coins - st;
+            st = st * 10;
+        }
+        
+    }
     void  ZachislenieMonet()
     {
-        coins++;
+        coins = coins + f ;
     }
     void Update()
     {
