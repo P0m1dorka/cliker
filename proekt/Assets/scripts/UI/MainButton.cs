@@ -8,7 +8,7 @@ public class MainButton : MonoBehaviour
 {
     [SerializeField] private Button _button;
     [SerializeField] private TMP_Text _text;
-    private int coins;
+    public int coins;
     void Start()
     {
         _button.onClick.AddListener(ZachislenieMonet);

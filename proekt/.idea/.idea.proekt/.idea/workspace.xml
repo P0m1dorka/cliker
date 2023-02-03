@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="294c57c5-6a54-4e9a-9c6f-ced2dc6acf86" name="Changes" comment="" />
+    <list default="true" id="294c57c5-6a54-4e9a-9c6f-ced2dc6acf86" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.proekt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proekt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/Core/antichit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Core/antichit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/UI/MainButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/UI/MainButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +95,9 @@
       <workItem from="1675264783856" duration="749000" />
       <workItem from="1675332825314" duration="1154000" />
       <workItem from="1675334065617" duration="1405000" />
+      <workItem from="1675346645436" duration="6113000" />
+      <workItem from="1675409009040" duration="552000" />
+      <workItem from="1675409646719" duration="66000" />
     </task>
     <servers />
   </component>
