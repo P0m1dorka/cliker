@@ -37,7 +37,7 @@ public class antichit : MonoBehaviour
             if (_cliks > _cliksMaxAmoiunt)
             {
                 ban = true;
-                Debug.Log("ПИДОРПИДОР");
+                
             }
             else
             {
