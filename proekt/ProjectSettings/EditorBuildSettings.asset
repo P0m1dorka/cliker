@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/SharikiTraing.unity
+    guid: 2128eed73be69644a8e8a4e6b9e728a7
   m_configObjects: {}
