@@ -10,18 +10,22 @@ public class Money : MonoBehaviour
     private int _money;
     [SerializeField] private Button _moneyButton;
     [SerializeField] private TMP_Text _moneyText;
+    private int scale;
     // Start is called before the first frame update
     void Start()
     {
+        scale = PlayerPrefs.GetInt("_scaleMoney");
+        _money = PlayerPrefs.GetInt("_money") + 10;
         _moneyButton.onClick.AddListener(PlusMoney);   
     }
     private void Update()
     {
-        PlayerPrefs.SetInt("money", _money);
+        PlayerPrefs.SetInt("_money", _money);
         _moneyText.text = $"Score: {_money}";
     }
     private void PlusMoney()
     {
-        _money += 1 ;
+        scale = PlayerPrefs.GetInt("_scaleMoney");
+        _money += 1 * scale;
     }
 }
