@@ -10,7 +10,9 @@ public class Money : MonoBehaviour
     private int _money;
     [SerializeField] private Button _moneyButton;
     [SerializeField] private TMP_Text _moneyText;
+    [SerializeField] private GameObject _popUpPrefab;
     private int scale;
+    private GameObject _POPuP;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +30,10 @@ public class Money : MonoBehaviour
         scale = PlayerPrefs.GetInt("_scaleMoney");
         _money += 1 * scale;
         PlayerPrefs.SetInt("_money", _money);
+        PopUP();
+    }
+    private void PopUP()
+    {
+        _POPuP = Instantiate(_popUpPrefab, (Vector2)Input.mousePosition,Quaternion.identity);
     }
 }
