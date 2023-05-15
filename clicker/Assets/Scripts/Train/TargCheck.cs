@@ -6,17 +6,17 @@ using UnityEngine.UI;
 
 public class TargCheck : MonoBehaviour
 {
-    [SerializeField] private Button _targ;
     private int _kolvo;
     private void Start()
     {
         _kolvo = PlayerPrefs.GetInt("_targets");
-        _targ.onClick.AddListener(OnMouseDown);
+     
     }
-    private void OnMouseDown()
+    private void OnMouseUpAsButton()
     {
         _kolvo++;
         PlayerPrefs.SetInt("_targets", _kolvo);
+        Debug.Log("test");
         Destroy(gameObject);
     }
     private void OnBecameInvisible()
@@ -29,6 +29,20 @@ public class TargCheck : MonoBehaviour
         {
 
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name == "Zone")
+        {
 
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
