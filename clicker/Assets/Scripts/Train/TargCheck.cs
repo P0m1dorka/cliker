@@ -23,26 +23,4 @@ public class TargCheck : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    private void OnTriggerStay(Collider other)
-    {
-        if(other.name == "Zone")
-        {
-
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.name == "Zone")
-        {
-
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
 }
