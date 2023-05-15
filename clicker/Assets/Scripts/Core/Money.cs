@@ -20,12 +20,13 @@ public class Money : MonoBehaviour
     }
     private void Update()
     {
-        PlayerPrefs.SetInt("_money", _money);
-        _moneyText.text = $"Score: {_money}";
+        _money = PlayerPrefs.GetInt("_money");
+        _moneyText.text = $"Score: {PlayerPrefs.GetInt("_money")}";
     }
     private void PlusMoney()
     {
         scale = PlayerPrefs.GetInt("_scaleMoney");
         _money += 1 * scale;
+        PlayerPrefs.SetInt("_money", _money);
     }
 }
