@@ -9,8 +9,8 @@ public class PassiveINCOME : MonoBehaviour
     private int money;
     void Start()
     {
-       // PlayerPrefs.SetInt("_money", 0);
-       // PlayerPrefs.SetInt("_scaleMoney", 1);
+        PlayerPrefs.SetInt("_money", 0);
+        PlayerPrefs.SetInt("_scaleMoney", 1);
         StartCoroutine(Passive());
     }
 

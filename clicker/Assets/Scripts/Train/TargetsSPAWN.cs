@@ -14,10 +14,12 @@ public class TargetsSPAWN : TargCheck
     private int maxmish;
     private Vector3 _posTarg; 
     private GameObject _objectTarg;
-   
+    private float x ;
+    private float y ;
+    private float z ;
     private void Start()
     {
-        maxmish = 5;
+        maxmish = 9;
         PlayerPrefs.SetInt("_targets", 0);
         StartCoroutine(Spawner());
     }
@@ -26,8 +28,12 @@ public class TargetsSPAWN : TargCheck
     {
        while (true)
         {
-            yield return new WaitForSeconds(1);
-            _objectTarg = Instantiate(_object,transform.position,Quaternion.identity);
+            yield return new WaitForSeconds(_coldown);
+            float x = UnityEngine.Random.Range(-2f, 2f);
+            float y = UnityEngine.Random.Range(0f, 2f);
+            _posTarg = new Vector3(x, y, -7.8f);
+            Debug.Log(_posTarg);
+            _objectTarg = Instantiate(_object, _posTarg, Quaternion.identity);
             yield return new WaitForSeconds(1);
             Destroy(_objectTarg);
         }
@@ -36,12 +42,10 @@ public class TargetsSPAWN : TargCheck
     private void Update()
     {
         Debug.Log(PlayerPrefs.GetInt("_targets"));
-        Debug.Log(PlayerPrefs.GetInt("_targets"));
         if(PlayerPrefs.GetInt("_targets") > maxmish)
         {
             SceneManager.LoadScene("MainLVL");
         }
-        
     }
 
 }
