@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class Money : MonoBehaviour
 {
     private int _money;
-    [SerializeField] private Button _moneyButton;
     [SerializeField] private TMP_Text _moneyText;
     [SerializeField] private GameObject _popUpPrefab;
     private int scale;
@@ -18,7 +17,6 @@ public class Money : MonoBehaviour
     {
         scale = PlayerPrefs.GetInt("_scaleMoney");
         _money = PlayerPrefs.GetInt("_money") + 10;
-        _moneyButton.onClick.AddListener(PlusMoney);   
     }
     private void Update()
     {
@@ -34,6 +32,14 @@ public class Money : MonoBehaviour
     }
     private void PopUP()
     {
-        _POPuP = Instantiate(_popUpPrefab, (Vector2)Input.mousePosition,Quaternion.identity);
+        Vector3 _camerapos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        _camerapos.z = -7f;
+        _POPuP = Instantiate(_popUpPrefab, _camerapos,Quaternion.identity);
+    }
+
+    private void OnMouseDown()
+    {
+        PlusMoney();
+        PopUP();
     }
 }
