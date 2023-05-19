@@ -9,6 +9,7 @@ public class PassiveINCOME : MonoBehaviour
     private int money;
     void Start()
     {
+        wait = new WaitForSeconds(1f);
         PlayerPrefs.SetInt("_money", 0);
         PlayerPrefs.SetInt("_scaleMoney", 1);
         StartCoroutine(Passive());
@@ -18,8 +19,8 @@ public class PassiveINCOME : MonoBehaviour
     {
       while (true)
         {
-            yield return new WaitForSeconds(1);
-            PlayerPrefs.SetInt("_money", PlayerPrefs.GetInt("_money") + 1);
+            yield return wait;
+            PlayerPrefs.SetInt("_money", PlayerPrefs.GetInt("_money") + PlayerPrefs.GetInt("_passive"));
         }
     }
 }

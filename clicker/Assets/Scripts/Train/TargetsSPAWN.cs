@@ -41,7 +41,7 @@ public class TargetsSPAWN : TargCheck
 
     private void Update()
     {
-        Debug.Log(PlayerPrefs.GetInt("_targets"));
+      
         if(PlayerPrefs.GetInt("_targets") > maxmish)
         {
             SceneManager.LoadScene("MainLVL");

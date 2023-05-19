@@ -10,6 +10,7 @@ public class Money : MonoBehaviour
     [SerializeField] private TMP_Text _moneyText;
     [SerializeField] private GameObject _popUpPrefab;
     [SerializeField] private Camera _maincam;
+    [SerializeField] private TMP_Text _repText;
     private int scale;
     private Ray _ray;
     private GameObject _objectPopUp;
@@ -23,6 +24,7 @@ public class Money : MonoBehaviour
     {
         _money = PlayerPrefs.GetInt("_money");
         _moneyText.text = $"Score: {PlayerPrefs.GetInt("_money")}";
+        _repText.text = $"Reputation : {PlayerPrefs.GetInt("_reputation")}";
     }
     private void PlusMoney()
     {

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DeletePOP : MonoBehaviour
 {
-    //private void OnBecameInvisible()
-    //{
-    //    Destroy(gameObject);
-    //}
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }
