@@ -4,14 +4,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class Money : MonoBehaviour
 {
     private int _money;
     [SerializeField] private TMP_Text _moneyText;
     [SerializeField] private GameObject _popUpPrefab;
+    [SerializeField] private Camera _maincam;
     private int scale;
-    private GameObject _POPuP;
+    private Ray _ray;
+    private GameObject _objectPopUp;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,14 +33,15 @@ public class Money : MonoBehaviour
     }
     private void PopUP()
     {
-        Vector3 _camerapos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-        _camerapos.z = -7f;
-        _POPuP = Instantiate(_popUpPrefab, _camerapos,Quaternion.identity);
+        _ray = _maincam.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(_ray, out RaycastHit raycastHit))
+        {
+            _objectPopUp = Instantiate(_popUpPrefab, Vector3.one, Quaternion.identity,transform);
+            _objectPopUp.transform.position = raycastHit.point;
+        }
     }
-
     private void OnMouseDown()
     {
         PlusMoney();
-        PopUP();
     }
 }

@@ -3112,6 +3112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moneyText: {fileID: 2107320338}
   _popUpPrefab: {fileID: 2454276261106388781, guid: 7b8e7ea5e5dccaf44bff87627284a8f7, type: 3}
+  _maincam: {fileID: 644863652}
 --- !u!4 &1703206460
 Transform:
   m_ObjectHideFlags: 0
@@ -3138,8 +3139,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.994381, y: 2.9533715, z: 1}
-  m_Center: {x: -0.1931417, y: -0.38194633, z: 0}
+  m_Size: {x: 3.994381, y: 2.9533715, z: 0}
+  m_Center: {x: -0.19314167, y: -0.38194633, z: 0.50000066}
 --- !u!1 &1726239915
 GameObject:
   m_ObjectHideFlags: 0
