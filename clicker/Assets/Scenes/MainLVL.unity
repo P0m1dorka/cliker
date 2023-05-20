@@ -4029,5 +4029,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pop
       objectReference: {fileID: 0}
+    - target: {fileID: 2454276261106388781, guid: 7b8e7ea5e5dccaf44bff87627284a8f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b8e7ea5e5dccaf44bff87627284a8f7, type: 3}
