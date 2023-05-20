@@ -18,9 +18,7 @@ public class Antichit : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Pivo");
             _clicks++;
-            Debug.Log(_clicks);
         }
     }
 
@@ -33,7 +31,7 @@ public class Antichit : MonoBehaviour
             {
                 _chit = true;
                 _clicks = 0;
-                // спросить у Андрея можно ли обнулить статус игрока
+                // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                 Application.Quit();
             }
             else

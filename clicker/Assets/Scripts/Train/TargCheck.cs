@@ -16,7 +16,6 @@ public class TargCheck : MonoBehaviour
     {
         _kolvo++;
         PlayerPrefs.SetInt("_targets", _kolvo);
-        Debug.Log("test");
         Destroy(gameObject);
     }
     private void OnBecameInvisible()
