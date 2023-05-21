@@ -19,8 +19,12 @@ public class TargetsSPAWN : TargCheck
     private float z ;
     private void Start()
     {
-        maxmish = 9;
-        PlayerPrefs.SetInt("_targets", 0);
+        Debug.Log(PlayerPrefs.GetInt("_maxtargets"));
+        PlayerPrefs.SetInt("_targets",0);
+        maxmish = PlayerPrefs.GetInt("_maxtargets");
+        if(maxmish>15){
+            PlayerPrefs.SetInt("_maxtargets",15);
+        }
         StartCoroutine(Spawner());
     }
   
@@ -34,16 +38,15 @@ public class TargetsSPAWN : TargCheck
             _posTarg = new Vector3(x, y, -7.8f);
             Debug.Log(_posTarg);
             _objectTarg = Instantiate(_object, _posTarg, Quaternion.identity);
-            yield return new WaitForSeconds(1);
-            Destroy(_objectTarg);
+            Debug.Log(PlayerPrefs.GetInt("_targets")); 
+        
         }
     }
-
     private void Update()
-    {
-      
-        if(PlayerPrefs.GetInt("_targets") > maxmish)
+    { 
+        if(PlayerPrefs.GetInt("_targets") >= maxmish)
         {
+            PlayerPrefs.SetInt("_maxtargets",maxmish+1);
             SceneManager.LoadScene("MainLVL");
         }
     }

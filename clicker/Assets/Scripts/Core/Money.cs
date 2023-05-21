@@ -17,11 +17,13 @@ public class Money : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("pivo");
         scale = PlayerPrefs.GetInt("_scaleMoney");
         _money = PlayerPrefs.GetInt("_money") + 10;
     }
     private void Update()
     {
+        
         _money = PlayerPrefs.GetInt("_money");
         _moneyText.text = $"Score: {PlayerPrefs.GetInt("_money")}";
         _repText.text = $"Reputation : {PlayerPrefs.GetInt("_reputation")}";
