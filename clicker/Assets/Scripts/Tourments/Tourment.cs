@@ -14,14 +14,22 @@ public class Tourment : MonoBehaviour
     private WaitForSeconds _wfs;
     private int _rep;
     private float _win_or_lose;
+    private Coroutine _coroutine;
+    
     private void Start()
     {
         _rep = PlayerPrefs.GetInt("_reputation");
+        _button.onClick.AddListener(STourment);
     }
+
+    private void STourment()
+    {
+        _coroutine = StartCoroutine(StartTourment());
+    }
+
     private IEnumerator StartTourment()
     {
-        while (true)
-        {
+       
             Debug.Log("StartTourment");
             yield return new WaitForSeconds(_waitTime);
             _win_or_lose = Random.value;
@@ -29,6 +37,7 @@ public class Tourment : MonoBehaviour
             {
                 PlayerPrefs.SetInt("_reputation", _rep++);
             }
-        }
+            StopCoroutine(_coroutine);
+        
     }
 }
