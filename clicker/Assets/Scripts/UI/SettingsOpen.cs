@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SettingsOpen : MonoBehaviour
 {
-   private IEnumerator OnMouseDown()
+   private void OnMouseDown()
    {
 
      Debug.Log("Pibo");

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1592,7 +1592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &426976681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1689,6 +1689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _butFirstTrain: {fileID: 670059237}
+  _costtrainssss: {fileID: 0}
 --- !u!1 &447162747
 GameObject:
   m_ObjectHideFlags: 0
@@ -4031,8 +4032,9 @@ GameObject:
   - component: {fileID: 1635305852}
   - component: {fileID: 1635305854}
   - component: {fileID: 1635305853}
+  - component: {fileID: 1635305855}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: "\u0432\u044B\u0432\u044B\u0432\u044B\u0432"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4078,7 +4080,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Targets
+  m_text: Tar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4155,6 +4157,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635305851}
   m_CullTransparentMesh: 1
+--- !u!114 &1635305855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635305851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35bf05caf9cc3f0428798b9dce00663f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1703206458
 GameObject:
   m_ObjectHideFlags: 0
@@ -4186,7 +4200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moneyText: {fileID: 2107320338}
-  _popUpPrefab: {fileID: 2454276261106388781, guid: 7b8e7ea5e5dccaf44bff87627284a8f7, type: 3}
+  _popUpPrefab: {fileID: 355864209887904269, guid: a45f407407656494a80450ba8176eddd, type: 3}
   _maincam: {fileID: 644863652}
   _repText: {fileID: 410306366}
 --- !u!4 &1703206460
@@ -4226,8 +4240,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1723786839}
-  - component: {fileID: 1723786840}
   - component: {fileID: 1723786841}
+  - component: {fileID: 1723786842}
   m_Layer: 0
   m_Name: System
   m_TagString: Untagged
@@ -4250,19 +4264,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1723786840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723786837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 757eb6c8f6ea572419ebc1367e109599, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _butFirstTrain: {fileID: 670059237}
 --- !u!114 &1723786841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4284,6 +4285,20 @@ MonoBehaviour:
   _tourments:
   - {fileID: 1131406421}
   - {fileID: 0}
+--- !u!114 &1723786842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723786837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757eb6c8f6ea572419ebc1367e109599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _butFirstTrain: {fileID: 670059237}
+  _costtrainssss: {fileID: 0}
 --- !u!1 &1726239915
 GameObject:
   m_ObjectHideFlags: 0

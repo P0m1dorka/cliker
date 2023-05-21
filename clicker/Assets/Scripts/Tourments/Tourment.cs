@@ -24,7 +24,11 @@ public class Tourment : MonoBehaviour
 
     private void STourment()
     {
-        _coroutine = StartCoroutine(StartTourment());
+        if (PlayerPrefs.GetInt("_money" ) >= 100)
+        {
+            PlayerPrefs.SetInt("_money", (PlayerPrefs.GetInt("_money") - 100));
+            _coroutine = StartCoroutine(StartTourment());
+        }
     }
 
     private IEnumerator StartTourment()
