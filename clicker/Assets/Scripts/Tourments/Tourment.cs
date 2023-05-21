@@ -15,10 +15,9 @@ public class Tourment : MonoBehaviour
     private int _rep;
     private float _win_or_lose;
     private Coroutine _coroutine;
+    
     private void Start()
     {
-        _rep = 0;   
-        
         _rep = PlayerPrefs.GetInt("_reputation");
         _button.onClick.AddListener(STourment);
     }
@@ -30,13 +29,15 @@ public class Tourment : MonoBehaviour
 
     private IEnumerator StartTourment()
     {
-             yield return new WaitForSeconds(_waitTime);
+       
+            Debug.Log("StartTourment");
+            yield return new WaitForSeconds(_waitTime);
             _win_or_lose = Random.value;
             if (_win_or_lose > 0.5f)
             {
                 PlayerPrefs.SetInt("_reputation", _rep++);
-                StopCoroutine(_coroutine);
             }
             StopCoroutine(_coroutine);
+        
     }
 }
