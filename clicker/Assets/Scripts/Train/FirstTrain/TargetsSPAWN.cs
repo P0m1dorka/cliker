@@ -14,6 +14,7 @@ public class TargetsSPAWN : TargCheck
     [SerializeField] private GameObject _object;
     [SerializeField] private float _maxtime;
     private int maxmish;
+    private int money;
     private Vector3 _posTarg; 
     private GameObject _objectTarg;
     private float x ;
@@ -21,6 +22,8 @@ public class TargetsSPAWN : TargCheck
     private float z ;
     private void Start()
     {
+        money = PlayerPrefs.GetInt("_money");
+        Debug.Log("_money");
         Debug.Log(PlayerPrefs.GetInt("_maxtargets"));
         PlayerPrefs.SetInt("_targets",0);
         maxmish = PlayerPrefs.GetInt("_maxtargets");
@@ -45,14 +48,17 @@ public class TargetsSPAWN : TargCheck
     }
     private void Update()
     { 
+        money = PlayerPrefs.GetInt("_money");
         _maxtime -= Time.deltaTime;
-        Debug.Log(_maxtime);
         if(_maxtime<0)
         {
+           
+            PlayerPrefs.SetInt("_money",money);
             SceneManager.LoadScene("MainLVL");
         }
         if(PlayerPrefs.GetInt("_targets") >= maxmish)
         {
+            PlayerPrefs.SetInt("_money",money);
             PlayerPrefs.SetInt("_maxtargets",maxmish+1);
             SceneManager.LoadScene("MainLVL");
         }

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Train1.unity
     guid: 52fdda3c6a37afa42b9b46b8e58b52b9
   - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
     path: Assets/Scenes/MainLVL.unity
     guid: 22bea343eecc3ba45bb55fa4460b3178
   m_configObjects: {}

@@ -14,8 +14,8 @@ public class UPMoney : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("_money", 0);
-        PlayerPrefs.SetInt("_scaleMoney", 1);
+        
+        
         _money = PlayerPrefs.GetInt("_money");
         _scaleMoney = PlayerPrefs.GetInt("_scaleMoney");
         _button.onClick.AddListener(UpMo);
@@ -29,11 +29,11 @@ public class UPMoney : MonoBehaviour
         if (PlayerPrefs.GetInt("_money") > 10)
         {
             _money = PlayerPrefs.GetInt("_money");
-            Debug.Log(_money);
-            _money = _money - 10;
+            _money -= 10;
             PlayerPrefs.SetInt("_money", _money);
             _scaleMoney = 1 + _scaleMoney;
             PlayerPrefs.SetInt("_scaleMoney", _scaleMoney);
+            PlayerPrefs.Save();
         }
     }
 }

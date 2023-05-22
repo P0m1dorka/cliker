@@ -11,7 +11,6 @@ public class Antichit : MonoBehaviour
     
     void Start()
     {
-       
         StartCoroutine(Check());
     }
     private void Update()
@@ -31,7 +30,6 @@ public class Antichit : MonoBehaviour
             {
                 _chit = true;
                 _clicks = 0;
-                // �������� � ������ ����� �� �������� ������ ������
                 Application.Quit();
             }
             else

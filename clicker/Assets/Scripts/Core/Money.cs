@@ -14,18 +14,18 @@ public class Money : MonoBehaviour
     private int scale;
     private Ray _ray;
     private GameObject _objectPopUp;
-    // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("pivo");
         scale = PlayerPrefs.GetInt("_scaleMoney");
-        _money = PlayerPrefs.GetInt("_money") + 10;
+        _money = PlayerPrefs.GetInt("_money");
+        Debug.Log($"money = {_money}");
     }
     private void Update()
     {
         
+        PlayerPrefs.Save();
         _money = PlayerPrefs.GetInt("_money");
-        _moneyText.text = $"Score: {PlayerPrefs.GetInt("_money")}";
+        _moneyText.text = $"Score: {_money}";
         _repText.text = $"Reputation : {PlayerPrefs.GetInt("_reputation")}";
     }
     private void PlusMoney()

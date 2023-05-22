@@ -19,7 +19,12 @@ public class Tourment : MonoBehaviour
     private void Start()
     {
         _rep = PlayerPrefs.GetInt("_reputation");
-        _button.onClick.AddListener(STourment);
+         _button.onClick.AddListener(STourment);
+    }
+
+    private void Update()
+    {
+        PlayerPrefs.SetInt("_reputation",_rep);
     }
 
     private void STourment()
@@ -33,13 +38,17 @@ public class Tourment : MonoBehaviour
 
     private IEnumerator StartTourment()
     {
-       
-            Debug.Log("StartTourment");
+        Debug.Log("StartTourment");
             yield return new WaitForSeconds(_waitTime);
             _win_or_lose = Random.value;
+        Debug.Log($"do buff {_win_or_lose}");
+            _win_or_lose += PlayerPrefs.GetFloat("_scalerep");
+        Debug.Log($"upnity {_win_or_lose}");
             if (_win_or_lose > 0.5f)
             {
-                PlayerPrefs.SetInt("_reputation", _rep++);
+                Debug.Log("win");
+                _rep++;
+                PlayerPrefs.SetInt("_reputation", _rep);
             }
             StopCoroutine(_coroutine);
         

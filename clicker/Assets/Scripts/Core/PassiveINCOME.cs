@@ -7,20 +7,20 @@ public class PassiveINCOME : MonoBehaviour
 {
     [SerializeField] private WaitForSeconds wait;
     private int money;
+    private int passiv;
     void Start()
     {
         wait = new WaitForSeconds(1f);
-        PlayerPrefs.SetInt("_money", 0);
-        PlayerPrefs.SetInt("_scaleMoney", 1);
         StartCoroutine(Passive());
     }
-
     private IEnumerator Passive()
     {
       while (true)
         {
             yield return wait;
-            PlayerPrefs.SetInt("_money", PlayerPrefs.GetInt("_money") + PlayerPrefs.GetInt("_passive"));
+            passiv = PlayerPrefs.GetInt("_passive");
+            money = PlayerPrefs.GetInt("_money");
+            PlayerPrefs.SetInt("_money", money + passiv);
         }
     }
 }
