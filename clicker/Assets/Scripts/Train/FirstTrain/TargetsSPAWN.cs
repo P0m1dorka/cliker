@@ -1,3 +1,4 @@
+using System.Collections;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ public class TargetsSPAWN : TargCheck
 {
     [SerializeField] private float _coldown;
     [SerializeField] private GameObject _object;
+    [SerializeField] private float _maxtime;
     private int maxmish;
     private Vector3 _posTarg; 
     private GameObject _objectTarg;
@@ -27,7 +29,6 @@ public class TargetsSPAWN : TargCheck
         }
         StartCoroutine(Spawner());
     }
-  
     private IEnumerator Spawner()
     {
        while (true)
@@ -44,6 +45,12 @@ public class TargetsSPAWN : TargCheck
     }
     private void Update()
     { 
+        _maxtime -= Time.deltaTime;
+        Debug.Log(_maxtime);
+        if(_maxtime<0)
+        {
+            SceneManager.LoadScene("MainLVL");
+        }
         if(PlayerPrefs.GetInt("_targets") >= maxmish)
         {
             PlayerPrefs.SetInt("_maxtargets",maxmish+1);

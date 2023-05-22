@@ -206,6 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coldown: 1
   _object: {fileID: 827673633707739862, guid: 54a63be6d4eb16046b199bc9fc08601f, type: 3}
+  _maxtime: 5
 --- !u!1 &710281585
 GameObject:
   m_ObjectHideFlags: 0

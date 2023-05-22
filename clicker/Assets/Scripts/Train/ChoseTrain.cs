@@ -24,8 +24,7 @@ public class ChoseTrain : MonoBehaviour
             _costtrain += _costtrain * 0.2;
             PlayerPrefs.SetInt("_costfirsttrain", Convert.ToInt32(_costtrain));
             PlayerPrefs.SetInt("_money",PlayerPrefs.GetInt("_money")-10);
-
-         //   SceneManager.LoadScene("Train1");
+            SceneManager.LoadScene("Train1");
         }
     }
 }
