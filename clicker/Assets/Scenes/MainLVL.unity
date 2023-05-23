@@ -4185,7 +4185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moneyText: {fileID: 2107320338}
-  _popUpPrefab: {fileID: 355864209887904269, guid: a45f407407656494a80450ba8176eddd, type: 3}
+  _popUpPrefab: {fileID: 5305397746641103830, guid: ab4e97dc22d300949bbf8fe80d8b52cf, type: 3}
   _maincam: {fileID: 644863652}
   _repText: {fileID: 410306366}
 --- !u!4 &1703206460
