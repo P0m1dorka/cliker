@@ -26,7 +26,7 @@ public class ChoseTrain : MonoBehaviour
         zena = PlayerPrefs.GetFloat("_costfirsttrain");
         money = PlayerPrefs.GetInt("_money");
         _text.text = $"{PlayerPrefs.GetFloat("_costfirsttrain")}";
-        _moneyText.text = $"Score: {PlayerPrefs.GetInt("_money")}";
+//        _moneyText.text = $"Score: {PlayerPrefs.GetInt("_money")}";
         Debug.Log($"real money = {PlayerPrefs.GetInt("_money")}");
     }
 

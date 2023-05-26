@@ -23,5 +23,4 @@ public class StartScript : MonoBehaviour
             SceneManager.LoadScene("MainLVL");
         }
     }
-
 }

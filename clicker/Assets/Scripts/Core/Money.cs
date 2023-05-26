@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Money : MonoBehaviour
 {
-    private int _money;
+    
     [SerializeField] private TMP_Text _moneyText;
     [SerializeField] private GameObject _popUpPrefab;
     [SerializeField] private Camera _maincam;
@@ -14,6 +14,7 @@ public class Money : MonoBehaviour
     private int scale;
     private Ray _ray;
     private GameObject _objectPopUp;
+    private int _money;
     void Start()
     {
         scale = PlayerPrefs.GetInt("_scaleMoney");
@@ -40,8 +41,8 @@ public class Money : MonoBehaviour
         _ray = _maincam.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(_ray, out RaycastHit raycastHit))
         {
-            _objectPopUp = Instantiate(_popUpPrefab, Vector3.one, Quaternion.identity,transform);
-            _objectPopUp.transform.position = raycastHit.point;
+            _objectPopUp = Instantiate(_popUpPrefab, raycastHit.point, Quaternion.identity,transform);
+       //     _objectPopUp.transform.position = raycastHit.point;
         }
     }
     private void OnMouseDown()
