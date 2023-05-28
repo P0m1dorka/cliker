@@ -18,7 +18,15 @@ public class PassiveINCOME : MonoBehaviour
       while (true)
         {
             yield return wait;
-            passiv = PlayerPrefs.GetInt("_passive");
+            if (PlayerPrefs.GetInt("_reputation") % 20 == 0 && PlayerPrefs.GetInt("_reputation") > 19)
+            {
+                passiv = PlayerPrefs.GetInt("_reputation") / 20;
+            }
+            if(PlayerPrefs.GetInt("_reputation") % 20 !=0 && PlayerPrefs.GetInt("_reputation") > 19)
+            {
+                passiv = PlayerPrefs.GetInt("_reputation") / 20;
+            }
+            Debug.Log("ptosfodsofs");
             money = PlayerPrefs.GetInt("_money");
             PlayerPrefs.SetInt("_money", money + passiv);
         }

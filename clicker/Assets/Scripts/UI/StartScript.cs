@@ -9,12 +9,12 @@ public class StartScript : MonoBehaviour
 {
     private void Start()
     {
-        PlayerPrefs.SetInt("_money", 0);
-        PlayerPrefs.SetInt("_reputation", 4);
+        PlayerPrefs.SetInt("_money", 100);
+        PlayerPrefs.SetInt("_reputation", 99);
         PlayerPrefs.SetInt("_scaleMoney",1);
-        PlayerPrefs.SetFloat("_costfirsttrain",10);
-        PlayerPrefs.SetFloat("_scalerep",0.1f);
-        PlayerPrefs.SetInt("_passive",1);
+        PlayerPrefs.SetFloat("_costfirsttrain",230);
+        PlayerPrefs.SetFloat("_costupgrade",100);
+        PlayerPrefs.SetInt("_passive",0);
     }
     void Update()
     {

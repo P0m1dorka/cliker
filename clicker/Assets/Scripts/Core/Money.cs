@@ -42,7 +42,6 @@ public class Money : MonoBehaviour
         if (Physics.Raycast(_ray, out RaycastHit raycastHit))
         {
             _objectPopUp = Instantiate(_popUpPrefab, raycastHit.point, Quaternion.identity,transform);
-       //     _objectPopUp.transform.position = raycastHit.point;
         }
     }
     private void OnMouseDown()

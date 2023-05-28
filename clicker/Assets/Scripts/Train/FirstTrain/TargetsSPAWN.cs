@@ -52,13 +52,12 @@ public class TargetsSPAWN : TargCheck
         _maxtime -= Time.deltaTime;
         if(_maxtime<0)
         {
-           
-            PlayerPrefs.SetInt("_money",money);
+            PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + 10);
             SceneManager.LoadScene("MainLVL");
         }
         if(PlayerPrefs.GetInt("_targets") >= maxmish)
         {
-            PlayerPrefs.SetInt("_money",money);
+            PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + 10);
             PlayerPrefs.SetInt("_maxtargets",maxmish+1);
             SceneManager.LoadScene("MainLVL");
         }

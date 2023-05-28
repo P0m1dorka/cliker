@@ -11,25 +11,28 @@ public class UPMoney : MonoBehaviour
     [SerializeField] private TMP_Text _text;
     private int _scaleMoney;
     private int _money;
+    private float cost;
     // Start is called before the first frame update
     void Start()
     {
-        
-        
+
+        cost = PlayerPrefs.GetFloat("_costupgrade");
         _money = PlayerPrefs.GetInt("_money");
         _scaleMoney = PlayerPrefs.GetInt("_scaleMoney");
         _button.onClick.AddListener(UpMo);
     }
     private void Update()
     {
-        _text.text = "Cost: 10";
+
+        _text.text = $"Cost: {PlayerPrefs.GetFloat("_costupgrade")}";
     }
     private void UpMo()
     {
-        if (PlayerPrefs.GetInt("_money") > 10)
+        if (PlayerPrefs.GetInt("_money") > PlayerPrefs.GetFloat("_costupgrade"))
         {
+            cost += PlayerPrefs.GetFloat("_costupgrade") * 0.3f;
             _money = PlayerPrefs.GetInt("_money");
-            _money -= 10;
+            _money -= Convert.ToInt32(PlayerPrefs.GetFloat("_costupgrade"));
             PlayerPrefs.SetInt("_money", _money);
             _scaleMoney = 1 + _scaleMoney;
             PlayerPrefs.SetInt("_scaleMoney", _scaleMoney);
