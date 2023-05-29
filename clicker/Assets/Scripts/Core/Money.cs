@@ -23,7 +23,6 @@ public class Money : MonoBehaviour
     }
     private void Update()
     {
-        
         PlayerPrefs.Save();
         _money = PlayerPrefs.GetInt("_money");
         _moneyText.text = $"Score: {_money}";

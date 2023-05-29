@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -12,9 +13,6 @@ public class Tourment : MonoBehaviour
     [SerializeField] private float _waitTime;
     [SerializeField] private Button _button;
     [SerializeField] private GameObject _answerCanvas;
-    private WaitForSeconds _wfs;
-    private int _rep;
-    private float _win_or_lose;
     private Coroutine _coroutine;
     
     private void Start()
@@ -25,26 +23,24 @@ public class Tourment : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("_reputation" ) >= 100)
         {
-            _coroutine = StartCoroutine(StartTourment());
+            //  _coroutine = StartCoroutine(StartTourment());
+            SceneManager.LoadScene("SanyaSimple");
         }
         else
         {
-            _button.gameObject.SetActive(false);
-            _answerCanvas.SetActive(true);
-            new WaitForSeconds(1f);
-            _answerCanvas.SetActive(false);
-            _button.gameObject.SetActive(true);
-            Debug.Log("tesdt");
-            PlayerPrefs.SetInt("_reputation", 125);
+            _coroutine = StartCoroutine(NoTourment());
         }
     }
 
-    private IEnumerator StartTourment()
+    private IEnumerator NoTourment()
     {
 
-
-        yield return new WaitForSeconds(_waitTime);
-        Debug.Log("test");
+        Debug.Log("test1");
+        _answerCanvas.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        _answerCanvas.SetActive(false);
+        Debug.Log("dOBE");
+        StopCoroutine(_coroutine);
         //Debug.Log("StartTourment");
         //    yield return new WaitForSeconds(_waitTime);
         //    _win_or_lose = Random.value;
@@ -58,6 +54,5 @@ public class Tourment : MonoBehaviour
         //        PlayerPrefs.SetInt("_reputation", _rep);
         //    }
         //    StopCoroutine(_coroutine);
-        
     }
 }

@@ -12,10 +12,8 @@ public class UPMoney : MonoBehaviour
     private int _scaleMoney;
     private int _money;
     private float cost;
-    // Start is called before the first frame update
     void Start()
     {
-
         cost = PlayerPrefs.GetFloat("_costupgrade");
         _money = PlayerPrefs.GetInt("_money");
         _scaleMoney = PlayerPrefs.GetInt("_scaleMoney");
@@ -23,19 +21,20 @@ public class UPMoney : MonoBehaviour
     }
     private void Update()
     {
-
         _text.text = $"Cost: {PlayerPrefs.GetFloat("_costupgrade")}";
     }
     private void UpMo()
     {
         if (PlayerPrefs.GetInt("_money") > PlayerPrefs.GetFloat("_costupgrade"))
         {
+            cost = PlayerPrefs.GetFloat("_costupgrade");
             cost += PlayerPrefs.GetFloat("_costupgrade") * 0.3f;
             _money = PlayerPrefs.GetInt("_money");
             _money -= Convert.ToInt32(PlayerPrefs.GetFloat("_costupgrade"));
             PlayerPrefs.SetInt("_money", _money);
             _scaleMoney = 1 + _scaleMoney;
             PlayerPrefs.SetInt("_scaleMoney", _scaleMoney);
+            PlayerPrefs.SetFloat("_costupgrade", cost);
             PlayerPrefs.Save();
         }
     }
