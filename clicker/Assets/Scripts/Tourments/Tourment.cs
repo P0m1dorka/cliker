@@ -23,7 +23,6 @@ public class Tourment : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("_reputation" ) >= 100)
         {
-            //  _coroutine = StartCoroutine(StartTourment());
             SceneManager.LoadScene("SanyaSimple");
         }
         else
@@ -34,12 +33,9 @@ public class Tourment : MonoBehaviour
 
     private IEnumerator NoTourment()
     {
-
-        Debug.Log("test1");
         _answerCanvas.SetActive(true);
         yield return new WaitForSeconds(2f);
         _answerCanvas.SetActive(false);
-        Debug.Log("dOBE");
         StopCoroutine(_coroutine);
         //Debug.Log("StartTourment");
         //    yield return new WaitForSeconds(_waitTime);

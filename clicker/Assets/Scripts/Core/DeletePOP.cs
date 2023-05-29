@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class DeletePOP : MonoBehaviour
 {
-    private void OnBecameInvisible()
+    private WaitForSeconds _deathTime = new WaitForSeconds(2f);
+    private void Start()
     {
+        StartCoroutine(Test());
+    }
+    private IEnumerator Test()
+    {
+        yield return _deathTime;
         Destroy(gameObject);
     }
+   
 }
