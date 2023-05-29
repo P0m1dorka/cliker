@@ -25,8 +25,8 @@ public class Money : MonoBehaviour
     {
         PlayerPrefs.Save();
         _money = PlayerPrefs.GetInt("_money");
-        _moneyText.text = $"Score: {_money}";
-        _repText.text = $"Reputation : {PlayerPrefs.GetInt("_reputation")}";
+        _moneyText.text = $"{_money}";
+        _repText.text = $"{PlayerPrefs.GetInt("_reputation")}";
     }
     private void PlusMoney()
     {
@@ -41,6 +41,7 @@ public class Money : MonoBehaviour
         if (Physics.Raycast(_ray, out RaycastHit raycastHit))
         {
             _objectPopUp = Instantiate(_popUpPrefab, raycastHit.point, Quaternion.identity,transform);
+            _objectPopUp.transform.Rotate(0, 19.77f, 0);
         }
     }
     private void OnMouseDown()
