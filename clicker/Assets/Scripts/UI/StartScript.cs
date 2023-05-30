@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class StartScript : MonoBehaviour
 {
+   private KeyCode[] array = new KeyCode[5];
     private void Start()
     {
         if (PlayerPrefs.GetInt("_firstTime") == 1)
@@ -23,6 +24,7 @@ public class StartScript : MonoBehaviour
             PlayerPrefs.SetInt("_lvlHupgrade", 0);
             PlayerPrefs.SetInt("_passive", 0);
         }
+
     }
     void Update()
     {
