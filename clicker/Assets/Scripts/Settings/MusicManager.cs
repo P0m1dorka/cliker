@@ -28,5 +28,6 @@ public class MusicManager : MonoBehaviour
     public void PlaySound()
     {
         _audioMain.PlayOneShot(_audioCmain);
+
     }
 }

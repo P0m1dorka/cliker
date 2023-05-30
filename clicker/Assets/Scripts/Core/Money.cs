@@ -11,6 +11,8 @@ public class Money : MonoBehaviour
     [SerializeField] private GameObject _popUpPrefab;
     [SerializeField] private Camera _maincam;
     [SerializeField] private TMP_Text _repText;
+    [SerializeField] private AudioSource _sound;
+    [SerializeField] private AudioClip _soundClick;
     private int scale;
     private Ray _ray;
     private GameObject _objectPopUp;
@@ -37,6 +39,7 @@ public class Money : MonoBehaviour
     }
     private void PopUP()
     {
+        _sound.PlayOneShot(_soundClick);
         _ray = _maincam.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(_ray, out RaycastHit raycastHit))
         {
