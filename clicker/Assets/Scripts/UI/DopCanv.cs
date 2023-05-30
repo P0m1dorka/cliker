@@ -6,12 +6,13 @@ using UnityEngine.UI;
 
 public class DopCanv : MonoBehaviour
 {
+    [SerializeField] private GameObject _mainCanvas;
+    [SerializeField] private GameObject _trainCanvas;
+    [SerializeField] private GameObject _tourmentCanvas;
+    [SerializeField] private GameObject _upgradeCanvas;
     [SerializeField] private Button _upbutton;
-    [SerializeField] private GameObject _upobject;
     [SerializeField] private Button _trainbutton;
-    [SerializeField] private GameObject _trainobject;
     [SerializeField] private Button _tourbutton;
-    [SerializeField] private GameObject _tourobject;
     void Start()
     {
         _upbutton.onClick.AddListener(UPBut);    
@@ -20,22 +21,19 @@ public class DopCanv : MonoBehaviour
     }
     private void TourBut()
     {
-        _trainobject.SetActive(false);
-        _upobject.SetActive(false);
-        _tourobject.SetActive(true);
+       _mainCanvas.SetActive(false);
+        _tourmentCanvas.SetActive(true);
 
     }
     private void TrainBut()
     {
-        _trainobject.SetActive(true);
-        _upobject.SetActive(false);
-        _tourobject.SetActive(false);
+        _mainCanvas.SetActive(false);
+        _trainCanvas.SetActive(true);
     }
 
     private void UPBut()
     {
-        _trainobject.SetActive(false);
-        _upobject.SetActive(true);
-        _tourobject.SetActive(false);
+        _mainCanvas.SetActive(false);
+        _upgradeCanvas.SetActive(true);
     }
 }

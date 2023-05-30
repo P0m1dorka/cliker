@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Antichit : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class Antichit : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log($"clicks = {_clicks}");
         if (Input.GetMouseButtonDown(0))
         {
             _clicks++;
@@ -30,10 +32,12 @@ public class Antichit : MonoBehaviour
             {
                 _chit = true;
                 _clicks = 0;
-                Application.Quit();
+                PlayerPrefs.SetInt("_firstTime", 1);
+                SceneManager.LoadScene("StartScene");
             }
             else
             {
+                PlayerPrefs.SetInt("_firstTime", 0);
                 _clicks = 0;
             }
         }
