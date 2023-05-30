@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SanyaSimple.unity
     guid: 079a9ca8b58642f4a950f06f41955595
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 6dadbe4dc2b7b4d4a95f88ff46332a93
   m_configObjects: {}

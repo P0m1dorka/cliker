@@ -15,6 +15,8 @@ public class UPManager : MonoBehaviour
     [SerializeField] private string _playerLvl ; //= "_lvlFupgrade"
     [SerializeField] private int _needreputation;
     [SerializeField] private GameObject _blockImg;
+    [SerializeField] private AudioSource _audio;
+    [SerializeField] private AudioClip _sound;
     private int _scaleMoney;
     private int _money;
     private float cost;
@@ -47,6 +49,7 @@ public class UPManager : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("_reputation") >= _needreputation)
         {
+            _audio.PlayOneShot(_sound);
             _blockImg.SetActive(false);
             if (PlayerPrefs.GetInt("_money") > PlayerPrefs.GetFloat(_playerCost))
             {

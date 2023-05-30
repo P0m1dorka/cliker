@@ -18,10 +18,4 @@ public class Exit : MonoBehaviour
        PlayerPrefs.Save();
         SceneManager.LoadScene("MainLVL");
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -11,6 +11,9 @@ public class ChoseTrain : MonoBehaviour
     [SerializeField] private Button _butFirstTrain;
     [SerializeField] private TMP_Text _text;
     [SerializeField] private TMP_Text _moneyText;
+    [SerializeField] private AudioSource _audio;
+    [SerializeField] private AudioClip _sound;
+    
     private float zena;
     private int   money;
     void Start()
@@ -32,6 +35,7 @@ public class ChoseTrain : MonoBehaviour
     {
         if(money>=zena)
         {
+            _audio.PlayOneShot(_sound);
             money -= Convert.ToInt32(zena);
             zena += PlayerPrefs.GetFloat("_costfirsttrain") * 0.3f;
             PlayerPrefs.SetFloat("_costfirsttrain", zena);
