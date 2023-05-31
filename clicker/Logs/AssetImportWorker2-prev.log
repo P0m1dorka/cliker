@@ -15,7 +15,7 @@ C:/Users/Spiri/Desktop/cliker/clicker
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-57944
+59563
 Successfully changed project path to: C:/Users/Spiri/Desktop/cliker/clicker
 C:/Users/Spiri/Desktop/cliker/clicker
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,14 +47,14 @@ C:/Users/Spiri/Desktop/cliker/clicker
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25432] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2632648073 [EditorId] 2632648073 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [4700] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 3834465692 [EditorId] 3834465692 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [25432] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2632648073 [EditorId] 2632648073 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [4700] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 3834465692 [EditorId] 3834465692 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Refreshing native plugins compatible for Editor in 76.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 71.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -70,85 +70,85 @@ Initialize mono
 Mono path[0] = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002106 seconds.
+Registered in 0.002192 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Refreshing native plugins compatible for Editor in 68.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 84.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.562 seconds
+- Completed reload, in  0.548 seconds
 Domain Reload Profiling:
-	ReloadAssembly (562ms)
-		BeginReloadAssembly (77ms)
+	ReloadAssembly (548ms)
+		BeginReloadAssembly (67ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (395ms)
-			LoadAssemblies (77ms)
+		EndReloadAssembly (389ms)
+			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (104ms)
+			SetupTypeCache (91ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (226ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (233ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (69ms)
+				RefreshPlugins (84ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (112ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				ProcessInitializeOnLoadAttributes (104ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006722 seconds.
+Registered in 0.006988 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Spiri\Desktop\cliker\clicker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Spiri\Desktop\cliker\clicker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.894 seconds
+- Completed reload, in  0.973 seconds
 Domain Reload Profiling:
-	ReloadAssembly (894ms)
-		BeginReloadAssembly (95ms)
+	ReloadAssembly (974ms)
+		BeginReloadAssembly (97ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (14ms)
-		EndReloadAssembly (711ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (768ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (268ms)
+			SetupTypeCache (271ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (294ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (334ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (190ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
@@ -159,12 +159,12 @@ Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing C
 
 Please note that FBX files exported from Cinema4D are still supported.
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3852 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 30 unused Assets / (56.1 KB). Loaded Objects now: 4309.
-Memory consumption went from 147.0 MB to 146.9 MB.
-Total: 3.023700 ms (FindLiveObjects: 0.257700 ms CreateObjectMapping: 0.215000 ms MarkObjects: 2.490600 ms  DeleteObjects: 0.059700 ms)
+Memory consumption went from 146.9 MB to 146.9 MB.
+Total: 2.615200 ms (FindLiveObjects: 0.247300 ms CreateObjectMapping: 0.200300 ms MarkObjects: 2.115100 ms  DeleteObjects: 0.051900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -178,101 +178,43 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 24827.260242 seconds.
-  path: Assets/Images
-  artifactKey: Guid(b076bcd4e79243d44aef3169b15fbaef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images using Guid(b076bcd4e79243d44aef3169b15fbaef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549093d67658741ae6e488e36b64a5a4') in 0.010049 seconds 
+  Time since last request: 30167.764243 seconds.
+  path: Assets/Prefabs/UI/UI/Иконка магазина.png
+  artifactKey: Guid(e03826cc4faa45a4388398e19ca9bb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UI/Иконка магазина.png using Guid(e03826cc4faa45a4388398e19ca9bb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a128e5f752ebd36445c5f8debcbbdfc') in 0.051396 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.102892 seconds.
-  path: Assets/Images/maxresdefault.jpg
-  artifactKey: Guid(5cc8101eb69f55849bcb621fb315e6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/maxresdefault.jpg using Guid(5cc8101eb69f55849bcb621fb315e6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1ce81d0e785c9448a5d99e12b65a0a') in 0.051383 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.093159 seconds.
-  path: Assets/Images/Materials
-  artifactKey: Guid(a909597ff261cbe4498616ca309b4d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Materials using Guid(a909597ff261cbe4498616ca309b4d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd427a609be6c50c26cf21f593d08733a') in 0.004480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.123540 seconds.
-  path: Assets/Images/Materials/maxresdefault.mat
-  artifactKey: Guid(723ebe6448149d547b784521e7e30e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Materials/maxresdefault.mat using Guid(723ebe6448149d547b784521e7e30e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493224bb545f2322eadc241eb2273ac4') in 0.060875 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Images/Materials/S1mple Cash.mat
-  artifactKey: Guid(a0db5111610b03e4bbceee0af83ce299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Materials/S1mple Cash.mat using Guid(a0db5111610b03e4bbceee0af83ce299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91574816f8e6299683ad7f5abff354df') in 0.008897 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Images/Materials/StartImage.mat
-  artifactKey: Guid(af53e5fbfea0ada479632df9031d2be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Materials/StartImage.mat using Guid(af53e5fbfea0ada479632df9031d2be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1eb638f96d60d2451bca7696bdc8995') in 0.017976 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.785889 seconds.
-  path: Assets/Prefabs/UI/PopUpPRef 1.prefab
-  artifactKey: Guid(85a3d2e1e24118a40b773ce7b042ded4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/PopUpPRef 1.prefab using Guid(85a3d2e1e24118a40b773ce7b042ded4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee718f492397ab44894d137999a42809') in 0.056077 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Prefabs/UI/SetButton.prefab
-  artifactKey: Guid(9504ba2d06aaf1340b939d1ba3bafce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/SetButton.prefab using Guid(9504ba2d06aaf1340b939d1ba3bafce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5ddbaeb422562070dfef7793741421') in 0.009204 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.598157 seconds.
-  path: Assets/Prefabs/Assets/PC Progression/Laptop_LVL2.prefab
-  artifactKey: Guid(3f55f974dbedb544da2546dacba7066b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Assets/PC Progression/Laptop_LVL2.prefab using Guid(3f55f974dbedb544da2546dacba7066b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f6cb65c84976be482f4aca8055a5ba9') in 0.025900 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.405435 seconds.
-  path: Assets/TextMesh Pro
-  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d457b26d2bc8024e58729449d46e968') in 0.004738 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.481641 seconds.
-  path: Assets/Materials/Computer.mat
-  artifactKey: Guid(b9c97a565530e094591effafe9ee25f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Computer.mat using Guid(b9c97a565530e094591effafe9ee25f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6fcdeaeca55c62c0906b68bc036693') in 0.009117 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.465544 seconds.
-  path: Assets/Tree_Textures/diffuse.png
-  artifactKey: Guid(8031c85bb6424c34ea2bb6d46350ce31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree_Textures/diffuse.png using Guid(8031c85bb6424c34ea2bb6d46350ce31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '882a5bd4de61825a417370ddd5a923e0') in 0.009631 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.565610 seconds.
-  path: Assets/Prefabs/UI/UI/Phone.png
-  artifactKey: Guid(dcdc86194c404614eb22d926818eca97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Phone.png using Guid(dcdc86194c404614eb22d926818eca97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa5ddbcacac26f8f5272ba81bfcc1ae') in 0.073153 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Prefabs/UI/UI/Иконка турнира.png
-  artifactKey: Guid(fb45f58b1f91d9c499ee5da16e9c3491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Иконка турнира.png using Guid(fb45f58b1f91d9c499ee5da16e9c3491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72b21ad0de3e930f5aec5eb9811fee0') in 0.011728 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
+  Time since last request: 5.713508 seconds.
   path: Assets/Prefabs/UI/UI/Иконка премиум валюты.png
   artifactKey: Guid(f3a9cc229ba52b943a51588ce8e9a701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Иконка премиум валюты.png using Guid(f3a9cc229ba52b943a51588ce8e9a701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062462d269bcd4736a49e880501b35f5') in 0.010369 seconds 
+Start importing Assets/Prefabs/UI/UI/Иконка премиум валюты.png using Guid(f3a9cc229ba52b943a51588ce8e9a701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f250967ebdde021e3a81713c8739280e') in 0.008315 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
+  Time since last request: 6.915877 seconds.
+  path: Assets/Prefabs/UI/UI/Иконка репутации.png
+  artifactKey: Guid(726a56b4ae86f9045bcf3967045c7403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UI/Иконка репутации.png using Guid(726a56b4ae86f9045bcf3967045c7403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f938ea8543e072f23a1ff75641f33449') in 0.007171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.341437 seconds.
+  path: Assets/Prefabs/UI/UI/Иконка тренировок.png
+  artifactKey: Guid(d096f790cdda19241a5ceda937db3218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UI/Иконка тренировок.png using Guid(d096f790cdda19241a5ceda937db3218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627cb95f08be914789a6300eae0e2f2d') in 0.008167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.459856 seconds.
+  path: Assets/Prefabs/UI/UI/Иконка турнира.png
+  artifactKey: Guid(fb45f58b1f91d9c499ee5da16e9c3491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UI/Иконка турнира.png using Guid(fb45f58b1f91d9c499ee5da16e9c3491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c2c4b874e9af241174e4a52d213517') in 0.007897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.420088 seconds.
   path: Assets/Prefabs/UI/UI/Иконка улучшений.png
   artifactKey: Guid(bdd574b3bb118654eac66b3e06b1aa3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Иконка улучшений.png using Guid(bdd574b3bb118654eac66b3e06b1aa3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5408db1b48c08ae69f07e51a7e69a37') in 0.013227 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Start importing Assets/Prefabs/UI/UI/Иконка улучшений.png using Guid(bdd574b3bb118654eac66b3e06b1aa3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3314fa2fbc089cbb539bc4faed40143') in 0.007224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.543897 seconds.
+  path: Assets/Prefabs/UI/UI/Иконка валюты.png
+  artifactKey: Guid(4ccd4048e189a824f8dbb6de3027d3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UI/Иконка валюты.png using Guid(4ccd4048e189a824f8dbb6de3027d3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113bafccbbab941ce3a564be29b338cd') in 0.008609 seconds 
