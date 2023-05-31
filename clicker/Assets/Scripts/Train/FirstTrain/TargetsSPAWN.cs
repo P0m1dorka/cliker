@@ -11,6 +11,8 @@ public class TargetsSPAWN : TargCheck
     [SerializeField] private float _coldown;
     [SerializeField] private GameObject _object;
     [SerializeField] private int maxmish;
+    [SerializeField] private int _max;
+    [SerializeField] private int _tg;
     private int money;
     private Vector3 _posTarg; 
     private GameObject _objectTarg;
@@ -30,6 +32,7 @@ public class TargetsSPAWN : TargCheck
         }
         StartCoroutine(Spawner());
     }
+    
     private IEnumerator Spawner()
     {
        while (true)
@@ -43,7 +46,9 @@ public class TargetsSPAWN : TargCheck
         }
     }
     private void Update()
-    { 
+    {
+        _max = PlayerPrefs.GetInt("_maxtargets");
+        _tg = PlayerPrefs.GetInt("_targets");
         money = PlayerPrefs.GetInt("_money");
         if(PlayerPrefs.GetInt("_targets") >= maxmish)
         {

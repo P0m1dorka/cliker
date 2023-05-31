@@ -21,6 +21,9 @@ public class UPManager : MonoBehaviour
     [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _sound;
     [SerializeField] private int _givescale;
+    [SerializeField] private int _needreputation;
+    [SerializeField] private GameObject _oldPC;
+    [SerializeField] private GameObject _newPC;
     private int _scaleMoney;
     private int _maxlvl = 25;
     private int _money;
@@ -40,46 +43,48 @@ public class UPManager : MonoBehaviour
         _costText.text = $"{Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat(_playerCost)),0)}";
         if (PlayerPrefs.GetFloat(_playerCost)>999 && PlayerPrefs.GetFloat(_playerCost) <= 999999)
         {
-          //  _costText.text = $"{PlayerPrefs.GetFloat(_playerCost)/1000}.{}k";
             _costText.text = $"{Math.Round(PlayerPrefs.GetFloat(_playerCost) / 1000)}.{Math.Round((PlayerPrefs.GetFloat(_playerCost) % 1000) / 100)}k";
         }
         else if (PlayerPrefs.GetFloat(_playerCost) > 999999)
         {
-            Debug.Log("lyamchik");
-            //  _costText.text = $"{Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat(_playerCost)) / 1000000, 0)}.{(Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat(_playerCost)) % 1000000) / 100000, 0)}m";
             _costText.text = $"{Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat(_playerCost)) / 1000000)}.{Math.Round(Convert.ToDouble((PlayerPrefs.GetFloat(_playerCost)) % 1000000) / 100000)}m";
         }
-        _lvlText.text = $"{PlayerPrefs.GetInt(_playerLvl)} / {_maxlvl} ";
+        _lvlText.text = $"{PlayerPrefs.GetInt(_playerLvl)}/{_maxlvl} ";
         if (PlayerPrefs.GetInt(_playerLvl) == 1)
         {
             PlayerPrefs.SetFloat(_playerCost, firstx);
         }
-        if (PlayerPrefs.GetInt(_preferlvl) >= 25)
+        if (PlayerPrefs.GetInt(_preferlvl) >= 25 && PlayerPrefs.GetInt("_reputation") >= _needreputation)
         {
+            _blockImg.SetActive(false);
             _button.gameObject.SetActive(true);
         }
         else
         {
             _button.gameObject.SetActive(false);
-            _blockImg.SetActive(true);
+           
         }
     }
     private void UpMo()
     {
+       
             _audio.PlayOneShot(_sound);
             _blockImg.SetActive(false);
             if (PlayerPrefs.GetInt(_playerLvl) != _maxlvl)
             {
+                 _blockImg.SetActive(false);
                 if (PlayerPrefs.GetInt("_money") >= PlayerPrefs.GetFloat(_playerCost))
                 {
-                    _money = PlayerPrefs.GetInt("_money");
-                    PlayerPrefs.SetInt("_money", Convert.ToInt32(_money - PlayerPrefs.GetFloat(_playerCost)));
-                    cost = (float)(((firstx * Math.Pow(1.15, Convert.ToDouble(PlayerPrefs.GetInt(_playerLvl))))));
-                    PlayerPrefs.SetInt(_playerLvl, PlayerPrefs.GetInt(_playerLvl) + 1);
-                    PlayerPrefs.SetFloat(_playerCost, cost);
-                    PlayerPrefs.SetInt("_scaleMoney", PlayerPrefs.GetInt("_scaleMoney") + _givescale);
-                    PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + _giveReputation);
-                    PlayerPrefs.Save();
+                        _oldPC.SetActive(false);
+                    _newPC.SetActive(true);
+                      _money = PlayerPrefs.GetInt("_money");
+                      PlayerPrefs.SetInt("_money", Convert.ToInt32(_money - PlayerPrefs.GetFloat(_playerCost)));
+                      cost = (float)(((firstx * Math.Pow(1.15, Convert.ToDouble(PlayerPrefs.GetInt(_playerLvl))))));
+                      PlayerPrefs.SetInt(_playerLvl, PlayerPrefs.GetInt(_playerLvl) + 1);
+                      PlayerPrefs.SetFloat(_playerCost, cost);
+                      PlayerPrefs.SetInt("_scaleMoney", PlayerPrefs.GetInt("_scaleMoney") + _givescale);
+                      PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + _giveReputation);
+                      PlayerPrefs.Save();
                 }
             }
            

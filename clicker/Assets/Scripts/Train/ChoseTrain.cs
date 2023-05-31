@@ -10,44 +10,64 @@ public class ChoseTrain : MonoBehaviour
 {
     [SerializeField] private Button _butFirstTrain;
     [SerializeField] private TMP_Text _text;
+    [SerializeField] private TMP_Text _lvltext;
     [SerializeField] private TMP_Text _moneyText;
     [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _sound;
+    [SerializeField] private string _name;
+    [SerializeField] private string _cost;
+    [SerializeField] private string _trainScene;
+    [SerializeField] private int _firstX;
+    [SerializeField] private string _lvlTrain;
     
     private float zena;
     private int   money;
     void Start()
     {
         _butFirstTrain.onClick.AddListener(ChangeScene);
-        zena = PlayerPrefs.GetFloat("_costfirsttrain");
-        Debug.Log($"CostTrain: {PlayerPrefs.GetInt("_costfirsttrain")}");
+        zena = PlayerPrefs.GetFloat(_cost);
     }
     private void Update()
     {   
-        zena = PlayerPrefs.GetFloat("_costfirsttrain");
+        zena = PlayerPrefs.GetFloat(_cost);
         money = PlayerPrefs.GetInt("_money");
-        _text.text = $"{PlayerPrefs.GetFloat("_costfirsttrain")}";
-        if (PlayerPrefs.GetFloat("_costfirsttrain") > 999 && PlayerPrefs.GetFloat("_costfirsttrain") <= 999999)
+        _text.text = $"{Math.Round(PlayerPrefs.GetFloat(_cost))}";
+        _lvltext.text = $"{PlayerPrefs.GetInt(_lvlTrain)}/{PlayerPrefs.GetInt("_lvlFmax")}";
+        if (PlayerPrefs.GetFloat(_cost) > 999 && PlayerPrefs.GetFloat(_cost) <= 999999)
         {
-            _text.text = $"{Math.Round(PlayerPrefs.GetFloat("_costfirsttrain") / 1000)}.{Math.Round((PlayerPrefs.GetFloat("_costfirsttrain") % 1000) / 100)}k";
+            _text.text = $"{Math.Round(PlayerPrefs.GetFloat(_cost) / 1000)}.{Math.Round((PlayerPrefs.GetFloat(_cost) % 1000) / 100)}k";
         }
-        else if (PlayerPrefs.GetFloat("_costfirsttrain") > 999999)
+        else if (PlayerPrefs.GetFloat(_cost) > 999999)
         {
-            _text.text = $"{Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat("_costfirsttrain")) / 1000000)}.{Math.Round(Convert.ToDouble((PlayerPrefs.GetFloat("_costfirsttrain")) % 1000000) / 100000)}m";
+            _text.text = $"{Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat(_cost)) / 1000000)}.{Math.Round(Convert.ToDouble((PlayerPrefs.GetFloat(_cost)) % 1000000) / 100000)}m";
         }
         Debug.Log($"real money = {PlayerPrefs.GetInt("_money")}");
     }
     private void ChangeScene()
     {
-        if(money>=zena)
+
+        if (PlayerPrefs.GetInt(_lvlTrain) >= PlayerPrefs.GetInt("_lvlFmax"))
         {
-            _audio.PlayOneShot(_sound);
-            money -= Convert.ToInt32(zena);
-            zena += PlayerPrefs.GetFloat("_costfirsttrain") * 0.3f;
-            PlayerPrefs.SetFloat("_costfirsttrain", zena);
-            PlayerPrefs.SetInt("_money", money);
-            PlayerPrefs.Save();
-            SceneManager.LoadScene("Train1");
+
+        }
+        else
+        {
+            if (money >= zena)
+            {
+                _audio.PlayOneShot(_sound);
+                money -= Convert.ToInt32(zena);
+                zena = (float)(_firstX * (Math.Pow(1.15, PlayerPrefs.GetInt(_lvlTrain)) + 1));
+                PlayerPrefs.SetInt(_lvlTrain, PlayerPrefs.GetInt(_lvlTrain) + 1);
+                if (PlayerPrefs.GetInt(_lvlTrain) >= PlayerPrefs.GetInt("_lvlFmax"))
+                {
+                    PlayerPrefs.SetInt(_lvlTrain, PlayerPrefs.GetInt(_lvlTrain) - 1);
+                }
+                PlayerPrefs.SetFloat(_cost, zena);
+                PlayerPrefs.SetInt("_money", money);
+                PlayerPrefs.SetInt("_targets", 0);
+                PlayerPrefs.Save();
+                SceneManager.LoadScene(_trainScene);
+            }
         }
     }
 }

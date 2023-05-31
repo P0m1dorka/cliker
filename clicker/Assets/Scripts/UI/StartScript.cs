@@ -20,8 +20,13 @@ public class StartScript : MonoBehaviour
             PlayerPrefs.SetFloat("_costFupgrade", 100);
             PlayerPrefs.SetFloat("_costMupgrade", 3500);
             PlayerPrefs.SetFloat("_costHupgrade", 125000);
+            PlayerPrefs.SetInt("_lvlFtrain", 1);
+            PlayerPrefs.SetInt("_lvlFmax", 25);
+            PlayerPrefs.SetFloat("_costFtrain", 115);
             PlayerPrefs.SetInt("_lvl0upgrade", 25);
             PlayerPrefs.SetInt("_lvlFupgrade", 1);
+            PlayerPrefs.SetInt("_maxtargets", 5);
+            PlayerPrefs.SetInt("_targets", 0);
             PlayerPrefs.SetInt("_lvlMupgrade", 1);
             PlayerPrefs.SetInt("_lvlHupgrade", 1);
             PlayerPrefs.SetInt("_passive", 0);
