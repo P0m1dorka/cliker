@@ -22,13 +22,19 @@ public class ChoseTrain : MonoBehaviour
         zena = PlayerPrefs.GetFloat("_costfirsttrain");
         Debug.Log($"CostTrain: {PlayerPrefs.GetInt("_costfirsttrain")}");
     }
-
     private void Update()
-    {
-        
+    {   
         zena = PlayerPrefs.GetFloat("_costfirsttrain");
         money = PlayerPrefs.GetInt("_money");
         _text.text = $"{PlayerPrefs.GetFloat("_costfirsttrain")}";
+        if (PlayerPrefs.GetFloat("_costfirsttrain") > 999 && PlayerPrefs.GetFloat("_costfirsttrain") <= 999999)
+        {
+            _text.text = $"{Math.Round(PlayerPrefs.GetFloat("_costfirsttrain") / 1000)}.{Math.Round((PlayerPrefs.GetFloat("_costfirsttrain") % 1000) / 100)}k";
+        }
+        else if (PlayerPrefs.GetFloat("_costfirsttrain") > 999999)
+        {
+            _text.text = $"{Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat("_costfirsttrain")) / 1000000)}.{Math.Round(Convert.ToDouble((PlayerPrefs.GetFloat("_costfirsttrain")) % 1000000) / 100000)}m";
+        }
         Debug.Log($"real money = {PlayerPrefs.GetInt("_money")}");
     }
     private void ChangeScene()

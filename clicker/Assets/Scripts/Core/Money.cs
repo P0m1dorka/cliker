@@ -25,9 +25,18 @@ public class Money : MonoBehaviour
     }
     private void Update()
     {
-        PlayerPrefs.Save();
         _money = PlayerPrefs.GetInt("_money");
-        _moneyText.text = $"{_money}";
+        _moneyText.text = $"{PlayerPrefs.GetInt("_money")}";
+        if (_money > 999 && _money<=999999)
+        {
+            _moneyText.text = $"{_money/1000}.{(_money%1000)/100}k";
+        }
+        else if (_money > 999999)
+        {
+            Debug.Log("lyamchik");
+            _moneyText.text = $"{_money/1000000}.{(_money%1000000)/100000}m";
+        }
+       
         _repText.text = $"{PlayerPrefs.GetInt("_reputation")}";
     }
     private void PlusMoney()
