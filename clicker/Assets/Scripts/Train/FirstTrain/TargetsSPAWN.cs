@@ -10,14 +10,13 @@ public class TargetsSPAWN : TargCheck
 {
     [SerializeField] private float _coldown;
     [SerializeField] private GameObject _object;
-    [SerializeField] private float _maxtime;
-    private int maxmish;
+    [SerializeField] private int maxmish;
     private int money;
     private Vector3 _posTarg; 
     private GameObject _objectTarg;
-    private float x ;
-    private float y ;
-    private float z ;
+    private float x;
+    private float y;
+    private float z;
     private void Start()
     {
         money = PlayerPrefs.GetInt("_money");
@@ -25,7 +24,8 @@ public class TargetsSPAWN : TargCheck
         Debug.Log(PlayerPrefs.GetInt("_maxtargets"));
         PlayerPrefs.SetInt("_targets",0);
         maxmish = PlayerPrefs.GetInt("_maxtargets");
-        if(maxmish>15){
+        if(maxmish>15)
+        {
             PlayerPrefs.SetInt("_maxtargets",15);
         }
         StartCoroutine(Spawner());
@@ -38,21 +38,13 @@ public class TargetsSPAWN : TargCheck
             float x = UnityEngine.Random.Range(-2f, 2f);
             float y = UnityEngine.Random.Range(0f, 2f);
             _posTarg = new Vector3(x, y, -7.8f);
-            Debug.Log(_posTarg);
             _objectTarg = Instantiate(_object, _posTarg, Quaternion.identity);
             Debug.Log(PlayerPrefs.GetInt("_targets")); 
-        
         }
     }
     private void Update()
     { 
         money = PlayerPrefs.GetInt("_money");
-        _maxtime -= Time.deltaTime;
-        if(_maxtime<0)
-        {
-            PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + 10);
-            SceneManager.LoadScene("MainLVL");
-        }
         if(PlayerPrefs.GetInt("_targets") >= maxmish)
         {
             PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + 10);
