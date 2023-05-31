@@ -1,0 +1,278 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ru' Physical Memory: 32616 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Unity Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Spiri/Desktop/cliker/clicker
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+57944
+Successfully changed project path to: C:/Users/Spiri/Desktop/cliker/clicker
+C:/Users/Spiri/Desktop/cliker/clicker
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [25432] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2632648073 [EditorId] 2632648073 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [25432] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2632648073 [EditorId] 2632648073 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Refreshing native plugins compatible for Editor in 76.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Spiri/Desktop/cliker/clicker/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12100 MB
+    Driver:   31.0.15.3598
+Initialize mono
+Mono path[0] = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002106 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Refreshing native plugins compatible for Editor in 68.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.562 seconds
+Domain Reload Profiling:
+	ReloadAssembly (562ms)
+		BeginReloadAssembly (77ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (395ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (104ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (226ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (69ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (112ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006722 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Spiri\Desktop\cliker\clicker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Spiri\Desktop\cliker\clicker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.894 seconds
+Domain Reload Profiling:
+	ReloadAssembly (894ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (711ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (268ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (294ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+========================================================================
+Worker process is ready to serve import requests
+Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3852 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (56.1 KB). Loaded Objects now: 4309.
+Memory consumption went from 147.0 MB to 146.9 MB.
+Total: 3.023700 ms (FindLiveObjects: 0.257700 ms CreateObjectMapping: 0.215000 ms MarkObjects: 2.490600 ms  DeleteObjects: 0.059700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 24827.260242 seconds.
+  path: Assets/Images
+  artifactKey: Guid(b076bcd4e79243d44aef3169b15fbaef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images using Guid(b076bcd4e79243d44aef3169b15fbaef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549093d67658741ae6e488e36b64a5a4') in 0.010049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.102892 seconds.
+  path: Assets/Images/maxresdefault.jpg
+  artifactKey: Guid(5cc8101eb69f55849bcb621fb315e6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/maxresdefault.jpg using Guid(5cc8101eb69f55849bcb621fb315e6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1ce81d0e785c9448a5d99e12b65a0a') in 0.051383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.093159 seconds.
+  path: Assets/Images/Materials
+  artifactKey: Guid(a909597ff261cbe4498616ca309b4d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Materials using Guid(a909597ff261cbe4498616ca309b4d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd427a609be6c50c26cf21f593d08733a') in 0.004480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.123540 seconds.
+  path: Assets/Images/Materials/maxresdefault.mat
+  artifactKey: Guid(723ebe6448149d547b784521e7e30e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Materials/maxresdefault.mat using Guid(723ebe6448149d547b784521e7e30e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493224bb545f2322eadc241eb2273ac4') in 0.060875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Images/Materials/S1mple Cash.mat
+  artifactKey: Guid(a0db5111610b03e4bbceee0af83ce299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Materials/S1mple Cash.mat using Guid(a0db5111610b03e4bbceee0af83ce299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91574816f8e6299683ad7f5abff354df') in 0.008897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Images/Materials/StartImage.mat
+  artifactKey: Guid(af53e5fbfea0ada479632df9031d2be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Materials/StartImage.mat using Guid(af53e5fbfea0ada479632df9031d2be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1eb638f96d60d2451bca7696bdc8995') in 0.017976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.785889 seconds.
+  path: Assets/Prefabs/UI/PopUpPRef 1.prefab
+  artifactKey: Guid(85a3d2e1e24118a40b773ce7b042ded4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/PopUpPRef 1.prefab using Guid(85a3d2e1e24118a40b773ce7b042ded4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee718f492397ab44894d137999a42809') in 0.056077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/UI/SetButton.prefab
+  artifactKey: Guid(9504ba2d06aaf1340b939d1ba3bafce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/SetButton.prefab using Guid(9504ba2d06aaf1340b939d1ba3bafce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5ddbaeb422562070dfef7793741421') in 0.009204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.598157 seconds.
+  path: Assets/Prefabs/Assets/PC Progression/Laptop_LVL2.prefab
+  artifactKey: Guid(3f55f974dbedb544da2546dacba7066b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Assets/PC Progression/Laptop_LVL2.prefab using Guid(3f55f974dbedb544da2546dacba7066b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f6cb65c84976be482f4aca8055a5ba9') in 0.025900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.405435 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d457b26d2bc8024e58729449d46e968') in 0.004738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.481641 seconds.
+  path: Assets/Materials/Computer.mat
+  artifactKey: Guid(b9c97a565530e094591effafe9ee25f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Computer.mat using Guid(b9c97a565530e094591effafe9ee25f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6fcdeaeca55c62c0906b68bc036693') in 0.009117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.465544 seconds.
+  path: Assets/Tree_Textures/diffuse.png
+  artifactKey: Guid(8031c85bb6424c34ea2bb6d46350ce31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree_Textures/diffuse.png using Guid(8031c85bb6424c34ea2bb6d46350ce31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '882a5bd4de61825a417370ddd5a923e0') in 0.009631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.565610 seconds.
+  path: Assets/Prefabs/UI/UI/Phone.png
+  artifactKey: Guid(dcdc86194c404614eb22d926818eca97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UI/Phone.png using Guid(dcdc86194c404614eb22d926818eca97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa5ddbcacac26f8f5272ba81bfcc1ae') in 0.073153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/UI/UI/Иконка турнира.png
+  artifactKey: Guid(fb45f58b1f91d9c499ee5da16e9c3491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UI/Иконка турнира.png using Guid(fb45f58b1f91d9c499ee5da16e9c3491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72b21ad0de3e930f5aec5eb9811fee0') in 0.011728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/UI/UI/Иконка премиум валюты.png
+  artifactKey: Guid(f3a9cc229ba52b943a51588ce8e9a701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UI/Иконка премиум валюты.png using Guid(f3a9cc229ba52b943a51588ce8e9a701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062462d269bcd4736a49e880501b35f5') in 0.010369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Prefabs/UI/UI/Иконка улучшений.png
+  artifactKey: Guid(bdd574b3bb118654eac66b3e06b1aa3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UI/Иконка улучшений.png using Guid(bdd574b3bb118654eac66b3e06b1aa3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5408db1b48c08ae69f07e51a7e69a37') in 0.013227 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
