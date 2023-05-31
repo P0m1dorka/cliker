@@ -15,7 +15,7 @@ C:/Users/Spiri/Desktop/cliker/clicker
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-57944
+59563
 Successfully changed project path to: C:/Users/Spiri/Desktop/cliker/clicker
 C:/Users/Spiri/Desktop/cliker/clicker
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,14 +47,14 @@ C:/Users/Spiri/Desktop/cliker/clicker
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20424] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 1489172166 [EditorId] 1489172166 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25380] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 4083601117 [EditorId] 4083601117 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [20424] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 1489172166 [EditorId] 1489172166 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25380] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 4083601117 [EditorId] 4083601117 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Refreshing native plugins compatible for Editor in 69.69 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 71.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -70,85 +70,85 @@ Initialize mono
 Mono path[0] = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56544
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002054 seconds.
+Registered in 0.002001 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Refreshing native plugins compatible for Editor in 67.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 71.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.497 seconds
+- Completed reload, in  0.523 seconds
 Domain Reload Profiling:
-	ReloadAssembly (497ms)
-		BeginReloadAssembly (64ms)
+	ReloadAssembly (523ms)
+		BeginReloadAssembly (70ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (354ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (373ms)
+			LoadAssemblies (69ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (83ms)
+			SetupTypeCache (94ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (209ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (214ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (68ms)
+				RefreshPlugins (71ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (99ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				ProcessInitializeOnLoadAttributes (100ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006567 seconds.
+Registered in 0.006857 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Spiri\Desktop\cliker\clicker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Spiri\Desktop\cliker\clicker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.833 seconds
+- Completed reload, in  0.958 seconds
 Domain Reload Profiling:
-	ReloadAssembly (833ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (959ms)
+		BeginReloadAssembly (100ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (652ms)
-			LoadAssemblies (76ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (767ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (224ms)
+			SetupTypeCache (271ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (290ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (342ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (71ms)
-				ProcessInitializeOnLoadAttributes (189ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
@@ -158,13 +158,13 @@ Worker process is ready to serve import requests
 Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3852 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 30 unused Assets / (56.1 KB). Loaded Objects now: 4309.
-Memory consumption went from 147.0 MB to 146.9 MB.
-Total: 2.493200 ms (FindLiveObjects: 0.243300 ms CreateObjectMapping: 0.208500 ms MarkObjects: 1.990900 ms  DeleteObjects: 0.050000 ms)
+Memory consumption went from 146.9 MB to 146.9 MB.
+Total: 2.873100 ms (FindLiveObjects: 0.260900 ms CreateObjectMapping: 0.261200 ms MarkObjects: 2.293700 ms  DeleteObjects: 0.056800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -178,58 +178,10 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 24902.621777 seconds.
-  path: Assets/Tree_Textures/shadow.png
-  artifactKey: Guid(693405b9b8d8260429f14e0504004393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree_Textures/shadow.png using Guid(693405b9b8d8260429f14e0504004393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b9d7d280bc68c19e8de788daeef7b9') in 0.051994 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.523108 seconds.
-  path: Assets/Prefabs/UI/UI/Игровое пространство.png
-  artifactKey: Guid(28d8dba486da7cb47ade82d566f95f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Игровое пространство.png using Guid(28d8dba486da7cb47ade82d566f95f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b2e017934d24b1bba0ff370b2ea6a76') in 0.146439 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2273.129170 seconds.
-  path: Assets/Prefabs/UI/UI/Background.png
-  artifactKey: Guid(d1a80f4f952fae64a8ed3257824a2c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Background.png using Guid(d1a80f4f952fae64a8ed3257824a2c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9430b83d31f62fbbb404cda645cc79') in 0.012112 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000744 seconds.
-  path: Assets/Prefabs/UI/UI/Lock Upgrade 275.png
-  artifactKey: Guid(68144aca9dea09144b97940ddaeeeb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Lock Upgrade 275.png using Guid(68144aca9dea09144b97940ddaeeeb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a361457efb21a636a8a420ca539e02e3') in 0.008523 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Prefabs/UI/UI/Old PC.png
-  artifactKey: Guid(47ba4124f85f44443a45a17fc8fa0aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Old PC.png using Guid(47ba4124f85f44443a45a17fc8fa0aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58977949125710f6cc90deeb468b6afc') in 0.008468 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Prefabs/UI/UI/Laptop.png
-  artifactKey: Guid(c7efd78c62477c54c8d4128400ed74dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Laptop.png using Guid(c7efd78c62477c54c8d4128400ed74dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52c0f70e5d545083cf95b626a3a1b596') in 0.007805 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Prefabs/UI/UI/Lock Upgrade 2875.png
-  artifactKey: Guid(47e2c98f5670fe54c9a4db4a5bbcd0ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Lock Upgrade 2875.png using Guid(47e2c98f5670fe54c9a4db4a5bbcd0ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c17a49b5cb1781c25e4312f3a896c7e') in 0.008069 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Prefabs/UI/UI/Basic training.png
-  artifactKey: Guid(daf0e85ac24b2e944b1bf58616fe2b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/Basic training.png using Guid(daf0e85ac24b2e944b1bf58616fe2b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac17bbc18e95a9cbf38f417900fdd15') in 0.008346 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Prefabs/UI/UI/High End PC.png
-  artifactKey: Guid(ba17e4d56439ba043ba2f7d2b0504a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UI/High End PC.png using Guid(ba17e4d56439ba043ba2f7d2b0504a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847de85dc3fa735e75f54695af5bbc47') in 0.008312 seconds 
+  Time since last request: 30118.591854 seconds.
+  path: Assets/Prefabs/UI/UI/Иконка тренировок.png
+  artifactKey: Guid(d096f790cdda19241a5ceda937db3218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UI/Иконка тренировок.png using Guid(d096f790cdda19241a5ceda937db3218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26286568188e3b24f65f817296eb0845') in 0.058286 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
