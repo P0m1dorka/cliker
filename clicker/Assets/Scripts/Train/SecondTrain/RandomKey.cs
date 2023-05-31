@@ -49,7 +49,7 @@ public class RandomKey : MonoBehaviour
                 _text.color = Color.red;
                 Debug.Log("Ne popal");
             }
-            yield return new WaitForFixedUpdate();
+            yield return new WaitForSeconds(0.0001f);
         }
             
     }
