@@ -52,8 +52,9 @@ public class TargetsSPAWN : TargCheck
         money = PlayerPrefs.GetInt("_money");
         if(PlayerPrefs.GetInt("_targets") >= maxmish)
         {
-            PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + 10);
+            PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + 5);
             PlayerPrefs.SetInt("_maxtargets",maxmish+1);
+            PlayerPrefs.SetInt("_passive", PlayerPrefs.GetInt("_passive") + 1);
             SceneManager.LoadScene("MainLVL");
         }
     }

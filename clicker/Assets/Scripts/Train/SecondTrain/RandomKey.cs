@@ -11,11 +11,24 @@ public class RandomKey : MonoBehaviour
     [SerializeField] private TMP_Text _text;
     [SerializeField] private float _time;
     [SerializeField] private int _popadanie;
+    [SerializeField] private int _needpopad;
     System.Random rnd = new System.Random();
     private bool _input;
     private int _random;
+    private void Update()
+    {
+        if(_popadanie == _needpopad)
+        {
+            PlayerPrefs.SetInt("_passive", PlayerPrefs.GetInt("_passive") + 5);
+            PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + 250);
+        }
+    }
     void Start()
     {
+        if (PlayerPrefs.GetInt("_needpopad") >= 15)
+        {
+            PlayerPrefs.SetInt("_needpopad", 15);
+        }
         StartCoroutine(RandomKeyCode());
     }
     private IEnumerator RandomKeyCode()

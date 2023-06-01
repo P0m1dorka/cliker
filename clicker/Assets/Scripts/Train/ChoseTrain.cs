@@ -19,7 +19,7 @@ public class ChoseTrain : MonoBehaviour
     [SerializeField] private string _trainScene;
     [SerializeField] private int _firstX;
     [SerializeField] private string _lvlTrain;
-    
+    private bool _canUp;
     private float zena;
     private int   money;
     void Start()
@@ -55,6 +55,8 @@ public class ChoseTrain : MonoBehaviour
             if (money >= zena)
             {
                 _audio.PlayOneShot(_sound);
+                _canUp = true;
+                StartCoroutine(ChangeColor(_canUp));
                 money -= Convert.ToInt32(zena);
                 zena = (float)(_firstX * (Math.Pow(1.15, PlayerPrefs.GetInt(_lvlTrain)) + 1));
                 PlayerPrefs.SetInt(_lvlTrain, PlayerPrefs.GetInt(_lvlTrain) + 1);
@@ -68,6 +70,27 @@ public class ChoseTrain : MonoBehaviour
                 PlayerPrefs.Save();
                 SceneManager.LoadScene(_trainScene);
             }
+            else
+            {
+                _canUp = false;
+                StartCoroutine(ChangeColor(_canUp));
+            }
         }
+    }
+    private IEnumerator ChangeColor(bool _can)
+    {
+        if (!_can)
+        {
+            _text.color = Color.red;
+            yield return new WaitForSeconds(0.5f);
+            _text.color = Color.black;
+        }
+        else
+        {
+            _text.color = Color.green;
+            yield return new WaitForSeconds(0.5f);
+            _text.color = Color.black;
+        }
+
     }
 }

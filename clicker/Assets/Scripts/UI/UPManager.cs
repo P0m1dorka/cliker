@@ -29,6 +29,7 @@ public class UPManager : MonoBehaviour
     private int _money;
     private float cost;
     private int _lvl;
+    private bool _canUp;
     void Start()
     {
         _prefer = PlayerPrefs.GetInt(_preferlvl);
@@ -40,14 +41,22 @@ public class UPManager : MonoBehaviour
     }
     private void Update()
     {
-        _costText.text = $"{Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat(_playerCost)),0)}";
-        if (PlayerPrefs.GetFloat(_playerCost)>999 && PlayerPrefs.GetFloat(_playerCost) <= 999999)
+        if (PlayerPrefs.GetInt(_playerLvl) >= _maxlvl)
         {
-            _costText.text = $"{Math.Round(PlayerPrefs.GetFloat(_playerCost) / 1000)}.{Math.Round((PlayerPrefs.GetFloat(_playerCost) % 1000) / 100)}k";
+            _costText.text = $"MAX";
+            _costText.color = Color.red;
         }
-        else if (PlayerPrefs.GetFloat(_playerCost) > 999999)
+        else
         {
-            _costText.text = $"{Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat(_playerCost)) / 1000000)}.{Math.Round(Convert.ToDouble((PlayerPrefs.GetFloat(_playerCost)) % 1000000) / 100000)}m";
+            _costText.text = $"{Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat(_playerCost)), 0)}";
+            if (PlayerPrefs.GetFloat(_playerCost) > 999 && PlayerPrefs.GetFloat(_playerCost) <= 999999)
+            {
+                _costText.text = $"{Math.Round(PlayerPrefs.GetFloat(_playerCost) / 1000)}.{Math.Round((PlayerPrefs.GetFloat(_playerCost) % 1000) / 100)}k";
+            }
+            else if (PlayerPrefs.GetFloat(_playerCost) > 999999)
+            {
+                _costText.text = $"{Math.Round(Convert.ToDouble(PlayerPrefs.GetFloat(_playerCost)) / 1000000)}.{Math.Round(Convert.ToDouble((PlayerPrefs.GetFloat(_playerCost)) % 1000000) / 100000)}m";
+            }
         }
         _lvlText.text = $"{PlayerPrefs.GetInt(_playerLvl)}/{_maxlvl} ";
         if (PlayerPrefs.GetInt(_playerLvl) == 1)
@@ -68,15 +77,18 @@ public class UPManager : MonoBehaviour
     private void UpMo()
     {
        
-            _audio.PlayOneShot(_sound);
+           
             _blockImg.SetActive(false);
             if (PlayerPrefs.GetInt(_playerLvl) != _maxlvl)
             {
                  _blockImg.SetActive(false);
                 if (PlayerPrefs.GetInt("_money") >= PlayerPrefs.GetFloat(_playerCost))
                 {
-                        _oldPC.SetActive(false);
-                    _newPC.SetActive(true);
+                      _canUp = true;
+                      StartCoroutine(ChangeColor(_canUp));
+                _audio.PlayOneShot(_sound);
+                _oldPC.SetActive(false);
+                      _newPC.SetActive(true);
                       _money = PlayerPrefs.GetInt("_money");
                       PlayerPrefs.SetInt("_money", Convert.ToInt32(_money - PlayerPrefs.GetFloat(_playerCost)));
                       cost = (float)(((firstx * Math.Pow(1.15, Convert.ToDouble(PlayerPrefs.GetInt(_playerLvl))))));
@@ -86,7 +98,27 @@ public class UPManager : MonoBehaviour
                       PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + _giveReputation);
                       PlayerPrefs.Save();
                 }
+                else
+                {
+                     _canUp = false;
+                    StartCoroutine(ChangeColor(_canUp));
+                }
             }
-           
+    }
+    private IEnumerator ChangeColor(bool _can)
+    {
+        if (!_can)
+        {
+            _costText.color = Color.red;
+            yield return new WaitForSeconds(0.5f);
+            _costText.color = Color.black;
+        }
+        else
+        {
+            _costText.color = Color.green;
+            yield return new WaitForSeconds(0.5f);
+            _costText.color = Color.black;
+        }
+
     }
 }

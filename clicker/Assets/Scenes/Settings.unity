@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -741,7 +741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sliderMain: {fileID: 221433065}
   _audioCmain: {fileID: 8300000, guid: 0c8730eac818ba94a91bd335ffc982e5, type: 3}
-  _audioMain: {fileID: 221433064}
+  _audioMain: {fileID: 0}
   _music: _buyAudio
 --- !u!1 &267063486
 GameObject:
@@ -1365,7 +1365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sliderMain: {fileID: 576333532}
   _audioCmain: {fileID: 8300000, guid: 331a280e51f72504492b744219a51697, type: 3}
-  _audioMain: {fileID: 576333533}
+  _audioMain: {fileID: 0}
   _music: _clickAudio
 --- !u!1 &601615224
 GameObject:
@@ -1608,7 +1608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sliderMain: {fileID: 607445865}
   _audioCmain: {fileID: 8300000, guid: 4171436f4c47821469478f32988f2595, type: 3}
-  _audioMain: {fileID: 607445864}
+  _audioMain: {fileID: 0}
   _music: _openAudio
 --- !u!1 &766557305
 GameObject:
@@ -2781,7 +2781,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322809505}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c4f4d3d204632434e9d3ae4c28d7d31f, type: 3}
@@ -3333,12 +3333,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1522138814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7286bb7d6eb1ee4a894343c8fb2eaf6, type: 3}
+  m_Script: {fileID: 11500000, guid: 525080a00de3f6743889fd881593029e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _sliderMain: {fileID: 1522138816}
   _audioCmain: {fileID: 8300000, guid: c4f4d3d204632434e9d3ae4c28d7d31f, type: 3}
-  _audioMain: {fileID: 1322809509}
   _music: _mainAudio
 --- !u!1 &1554720945
 GameObject:
@@ -3959,7 +3958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sliderMain: {fileID: 2061154127}
   _audioCmain: {fileID: 8300000, guid: d9d9c0f20e837c24c9891d2af8dba925, type: 3}
-  _audioMain: {fileID: 2061154126}
+  _audioMain: {fileID: 0}
   _music: _closeAudio
 --- !u!1 &2086200416
 GameObject:
