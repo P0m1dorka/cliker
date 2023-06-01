@@ -1,0 +1,272 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ru' Physical Memory: 32616 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Unity Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/Spiri/Desktop/cliker/clicker
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+53414
+Successfully changed project path to: C:/Users/Spiri/Desktop/cliker/clicker
+C:/Users/Spiri/Desktop/cliker/clicker
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [4316] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 4159795204 [EditorId] 4159795204 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [4316] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 4159795204 [EditorId] 4159795204 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Refreshing native plugins compatible for Editor in 81.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Spiri/Desktop/cliker/clicker/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12100 MB
+    Driver:   31.0.15.3598
+Initialize mono
+Mono path[0] = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001998 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Refreshing native plugins compatible for Editor in 69.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.598 seconds
+Domain Reload Profiling:
+	ReloadAssembly (598ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (403ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (125ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (211ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (70ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (98ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006774 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Spiri\Desktop\cliker\clicker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Spiri\Desktop\cliker\clicker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.033 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1033ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (832ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (345ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (324ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+========================================================================
+Worker process is ready to serve import requests
+Assets/Prefabs/Assets/Gaming Desk/desk.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3852 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (56.1 KB). Loaded Objects now: 4309.
+Memory consumption went from 147.0 MB to 146.9 MB.
+Total: 2.796300 ms (FindLiveObjects: 0.254400 ms CreateObjectMapping: 0.204600 ms MarkObjects: 2.289700 ms  DeleteObjects: 0.046900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 21940.131375 seconds.
+  path: Assets/Prefabs/Assets/Gaming Desk/desk.fbx
+  artifactKey: Guid(36206adea22fa8348ab0b71c77f882a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Assets/Gaming Desk/desk.fbx using Guid(36206adea22fa8348ab0b71c77f882a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee7fcb96b35bae88d634e1ecdaa147d') in 0.282704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 608.668137 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Posters_02g.fbx
+  artifactKey: Guid(6fec2ec29a0d55446bd500ff5f17528a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Posters_02g.fbx using Guid(6fec2ec29a0d55446bd500ff5f17528a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48215309a46c97d94389201d6619d97a') in 0.014732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000826 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Book_01b.fbx
+  artifactKey: Guid(243858016bfb84744ad87f41b7961b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Book_01b.fbx using Guid(243858016bfb84744ad87f41b7961b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80ac6618ecdecd9eb42033fb5de79bd9') in 0.029344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_SignCangoro_01a.fbx
+  artifactKey: Guid(aa38b011ffa9ecf489aec08810ab6729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_SignCangoro_01a.fbx using Guid(aa38b011ffa9ecf489aec08810ab6729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757f2657072da1dab41fe3ca727f6122') in 0.023751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Camera_01a.fbx
+  artifactKey: Guid(d177062e1883bed44a4aebf1dc5e0dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Camera_01a.fbx using Guid(d177062e1883bed44a4aebf1dc5e0dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe2bf2243b037e546a7fa9e21984cde') in 0.023643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Schelf_01b.fbx
+  artifactKey: Guid(11383fb1f5d58164eadbf4dc3fa44938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Schelf_01b.fbx using Guid(11383fb1f5d58164eadbf4dc3fa44938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e0c4213e44856a096fdc1ab776add12') in 0.023924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_WallPanel_int_01c.fbx
+  artifactKey: Guid(8255ec24c19c8d34f8940f43f6f7c302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_WallPanel_int_01c.fbx using Guid(8255ec24c19c8d34f8940f43f6f7c302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0004a147d0642a3d23cfa7c2ce87c20d') in 0.011651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Books_01b.fbx
+  artifactKey: Guid(2ccf92fadedee324e98da9325185d59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Books_01b.fbx using Guid(2ccf92fadedee324e98da9325185d59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89aa29033589ec446ae1758d85fb810a') in 0.025900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Termos_01a.fbx
+  artifactKey: Guid(257f6406a54f89345be398e3b5a9471c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Termos_01a.fbx using Guid(257f6406a54f89345be398e3b5a9471c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a48b01ad6671a6568eb705ffd1bd3300') in 0.022788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Bookcase_02b.fbx
+  artifactKey: Guid(fbf90be352b36b74aadbb8334d127160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Models/EAThe80_Prop_Bookcase_02b.fbx using Guid(fbf90be352b36b74aadbb8334d127160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f54cf1b81c98ed7ccc62a3129365f30') in 0.023998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.628596 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Props/EAThe80_Prop_Books_01b_PRE.prefab
+  artifactKey: Guid(6ccc7105a505b5945a33b25e4abd8bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Props/EAThe80_Prop_Books_01b_PRE.prefab using Guid(6ccc7105a505b5945a33b25e4abd8bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d48508430154f78b16da7c89b73373') in 0.030724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.193393 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Furniture/EAThe80_Prop_Schelf_01b_PRE.prefab
+  artifactKey: Guid(e2dc4c5d62b562643b3fd8b58dc001df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Furniture/EAThe80_Prop_Schelf_01b_PRE.prefab using Guid(e2dc4c5d62b562643b3fd8b58dc001df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89c258563dd69a955be50b969aad407') in 0.027702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.801732 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Toys/EAThe80_Prop_PingPongPaddle_01a_PRE.prefab
+  artifactKey: Guid(bb8a6ebf007d96845a7ca6eb1ac665cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Toys/EAThe80_Prop_PingPongPaddle_01a_PRE.prefab using Guid(bb8a6ebf007d96845a7ca6eb1ac665cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '636ba9b4087e26e4eb8063e2eb861d48') in 0.028291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.431976 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Textures/EAThe80_WallPapper.psd
+  artifactKey: Guid(f009e331a795250499be49eb2ff8f391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Textures/EAThe80_WallPapper.psd using Guid(f009e331a795250499be49eb2ff8f391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9654d1c6ff6357b2b02a9b018869618') in 0.029852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.384729 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Materials/EAThe80_TextuWall_YouthWallPaper.mat
+  artifactKey: Guid(360edc4739264814880ebe7c21349278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Materials/EAThe80_TextuWall_YouthWallPaper.mat using Guid(360edc4739264814880ebe7c21349278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c08635e635d1ef6b3701426c5a0749e0') in 0.042157 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

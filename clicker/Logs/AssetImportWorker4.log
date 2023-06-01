@@ -1,0 +1,286 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ru' Physical Memory: 32616 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Unity Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/Spiri/Desktop/cliker/clicker
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+53414
+Successfully changed project path to: C:/Users/Spiri/Desktop/cliker/clicker
+C:/Users/Spiri/Desktop/cliker/clicker
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [4708] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2753351186 [EditorId] 2753351186 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [4708] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2753351186 [EditorId] 2753351186 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DM0N8CV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 73.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Spiri/Desktop/cliker/clicker/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12100 MB
+    Driver:   31.0.15.3598
+Initialize mono
+Mono path[0] = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/Unity Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002137 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 73.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.523 seconds
+Domain Reload Profiling:
+	ReloadAssembly (523ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (377ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (89ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (222ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (73ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (103ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008417 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Spiri\Desktop\cliker\clicker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Spiri\Desktop\cliker\clicker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.035 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1036ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (831ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (329ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (332ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3852 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (56.1 KB). Loaded Objects now: 4309.
+Memory consumption went from 147.1 MB to 147.0 MB.
+Total: 2.797700 ms (FindLiveObjects: 0.284200 ms CreateObjectMapping: 0.279000 ms MarkObjects: 2.177700 ms  DeleteObjects: 0.056200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 22556.893586 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs
+  artifactKey: Guid(99b929bddbe165544bfd7d244d73f3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs using Guid(99b929bddbe165544bfd7d244d73f3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a583043edb7f58221af58235c1af2f54') in 0.009241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.059334 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/EAThe80_Celin_4x4_01b_PRE.prefab
+  artifactKey: Guid(38be3b66d6eae754f95807df256a6b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/EAThe80_Celin_4x4_01b_PRE.prefab using Guid(38be3b66d6eae754f95807df256a6b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8614b0bf4d43e54efe95c970b9a4aa9c') in 0.118821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.668918 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom
+  artifactKey: Guid(dda218d551f4d3248ad3f5492db5856f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom using Guid(dda218d551f4d3248ad3f5492db5856f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0829e7f69642f9576ea25730abd463dd') in 0.004588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.092627 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Props
+  artifactKey: Guid(c9a0ba4bf1d4d5f4dbf898b01f92003e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Props using Guid(c9a0ba4bf1d4d5f4dbf898b01f92003e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '429117579b1036d347c712f798fe3acb') in 0.004753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.084310 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Props/EAThe80_Posters_02g_PRE.prefab
+  artifactKey: Guid(f9c9d6979ed5c0644888cf6a93758540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Props/EAThe80_Posters_02g_PRE.prefab using Guid(f9c9d6979ed5c0644888cf6a93758540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd601f539b6cde24db2b0886a5806ebb3') in 0.010993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Props/EAThe80_Prop_SignCangoro_01a_PRE.prefab
+  artifactKey: Guid(414d55b78f2b29e41b073431dcc67205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Props/EAThe80_Prop_SignCangoro_01a_PRE.prefab using Guid(414d55b78f2b29e41b073431dcc67205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6438917b425626a6f3b9c624fd2a534') in 0.026010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.115406 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Furniture
+  artifactKey: Guid(144a9fc86563b58439b61ef06d3249d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Furniture using Guid(144a9fc86563b58439b61ef06d3249d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90dc44fb9f32a98fc4ace3df29ca33c6') in 0.004606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.058788 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Furniture/EAThe80_Prop_Bookcase_02b_PRE.prefab
+  artifactKey: Guid(d6a7a1216adbf5d419629c23db6b0768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Furniture/EAThe80_Prop_Bookcase_02b_PRE.prefab using Guid(d6a7a1216adbf5d419629c23db6b0768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd658d73037f6eff781eef44b7c277c4f') in 0.028650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.729392 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Toys
+  artifactKey: Guid(451a118af05dd164b813f8a7ae90e0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Toys using Guid(451a118af05dd164b813f8a7ae90e0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '985796fa333f082cf8c870183c4bd801') in 0.004643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.062685 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Toys/EAThe80_Prop_Ball_01a_PRE.prefab
+  artifactKey: Guid(985af3ad2816e8040b493c13a83b1eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Youth bedroom/Toys/EAThe80_Prop_Ball_01a_PRE.prefab using Guid(985af3ad2816e8040b493c13a83b1eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de0dbbbd3c35592e93a480e0e5a1beb') in 0.029306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.356027 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Textures
+  artifactKey: Guid(a4bcd10c39e5a06498bdba8c69120f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Textures using Guid(a4bcd10c39e5a06498bdba8c69120f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0343387d54a0314b4e857887725c2ea9') in 0.004716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.066673 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Textures/EAThe80_MoviePostersTexture.psd
+  artifactKey: Guid(e71d0081b01083a42aa16c01f138cba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Textures/EAThe80_MoviePostersTexture.psd using Guid(e71d0081b01083a42aa16c01f138cba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d368ca3904e6f769404e1d3011a1d48') in 0.019305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.284455 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Materials
+  artifactKey: Guid(4b586050d065d4e459fbf49cf9ac7d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Materials using Guid(4b586050d065d4e459fbf49cf9ac7d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98569238416fdf78434f41e170b0f444') in 0.004541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.103168 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Materials/EAThe80_MoviePostersTexture.mat
+  artifactKey: Guid(003ed76914e58b74b9c2ab4d220c2ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Materials/EAThe80_MoviePostersTexture.mat using Guid(003ed76914e58b74b9c2ab4d220c2ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8abd2f0aee0973b42e183e0067323061') in 0.023044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.858767 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls
+  artifactKey: Guid(7414747a90393944d9161e3adb56bdd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls using Guid(7414747a90393944d9161e3adb56bdd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33395e5f44672ad7afdd8fca7871c85c') in 0.005486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.647217 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls/Interior_WallPapper
+  artifactKey: Guid(bafeb9cc5b3f82a4db6c48bca8a1c8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls/Interior_WallPapper using Guid(bafeb9cc5b3f82a4db6c48bca8a1c8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9b95067b180ece49fa320361de246d') in 0.004566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.943149 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls/Interior_WallPapper/YouthRoom
+  artifactKey: Guid(25cc5d01f5e9eca4ea1c231b1d1abcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls/Interior_WallPapper/YouthRoom using Guid(25cc5d01f5e9eca4ea1c231b1d1abcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9684a619db69ce27f85397a3da0d5ea7') in 0.004713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.082761 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls/Interior_WallPapper/YouthRoom/EAThe80_Wall_YouthRoom_int_4x4_01a_PRE.prefab
+  artifactKey: Guid(8a1b48cf25052544bbe050da5136fd8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls/Interior_WallPapper/YouthRoom/EAThe80_Wall_YouthRoom_int_4x4_01a_PRE.prefab using Guid(8a1b48cf25052544bbe050da5136fd8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20c727df4c8b6fe4e57d7dbaea71d0d1') in 0.030694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.294649 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls/WallPanel
+  artifactKey: Guid(b0895d1f5544b2c48bd182e9526de962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls/WallPanel using Guid(b0895d1f5544b2c48bd182e9526de962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03cdfc70aa798f11aa9e56bcf2773306') in 0.004312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.078817 seconds.
+  path: Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls/WallPanel/EAThe80_WallPanel_Corner_4X4_int_01c_PRE.prefab
+  artifactKey: Guid(0b9e978df70ec5d449cf40e565859c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt/it`s 80`s_FREE/Prefabs/Walls/WallPanel/EAThe80_WallPanel_Corner_4X4_int_01c_PRE.prefab using Guid(0b9e978df70ec5d449cf40e565859c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c2cc319cdbc0e3ac761556d118470ab') in 0.023024 seconds 
