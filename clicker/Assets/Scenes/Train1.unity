@@ -176,7 +176,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fe9105f42e386ef46b55495a12bb2325, type: 2}
+  - {fileID: 2100000, guid: bace220154218b84c88e5ff3e33a59ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -389,6 +389,8 @@ MonoBehaviour:
   _coldown: 1
   _object: {fileID: 6185133430874738724, guid: 7d88fcd5147cee544a9dddf0ed6a65c0, type: 3}
   maxmish: 0
+  _max: 0
+  _tg: 0
 --- !u!1 &1602711178
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +624,10 @@ PrefabInstance:
     - target: {fileID: 7416658972423952818, guid: 5118c777ced6afb42b900e4ca7c3f4ed, type: 3}
       propertyPath: m_Name
       value: Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7416658972423952822, guid: 5118c777ced6afb42b900e4ca7c3f4ed, type: 3}
+      propertyPath: _maxTime
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5118c777ced6afb42b900e4ca7c3f4ed, type: 3}

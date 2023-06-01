@@ -12,8 +12,8 @@ public class StartScript : MonoBehaviour
         PlayerPrefs.SetInt("_firstTime", 1);
         if (PlayerPrefs.GetInt("_firstTime") == 1)
         {
-            PlayerPrefs.SetInt("_money", 100);
-            PlayerPrefs.SetInt("_reputation", 100);
+            PlayerPrefs.SetInt("_money", 0);
+            PlayerPrefs.SetInt("_reputation", 0);
             PlayerPrefs.SetInt("_scaleMoney", 1);
             PlayerPrefs.SetFloat("_costfirsttrain", 2500000);
             PlayerPrefs.SetFloat("_costFupgrade", 100);
@@ -34,6 +34,14 @@ public class StartScript : MonoBehaviour
             PlayerPrefs.SetInt("_lvlHupgrade", 1);
             PlayerPrefs.SetInt("_passive", 0);
             PlayerPrefs.SetInt("_almazi", 10);
+            PlayerPrefs.SetInt("_qval", 0);
+            PlayerPrefs.SetInt("_top", 0);
+            PlayerPrefs.SetInt("_nulevoy", 100);
+            PlayerPrefs.SetFloat("_mainAudio",1f);
+            PlayerPrefs.SetFloat("_clickAudio", 1f);
+            PlayerPrefs.SetFloat("_buyAudio", 1f);
+            PlayerPrefs.SetFloat("_openAudio", 1f);
+            PlayerPrefs.SetFloat("_closeAudio", 1f);
         }
     }
     void Update()

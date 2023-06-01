@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RandomKey : MonoBehaviour
 {
@@ -17,10 +18,11 @@ public class RandomKey : MonoBehaviour
     private int _random;
     private void Update()
     {
-        if(_popadanie == _needpopad)
+        
+        if(_popadanie >= _needpopad)
         {
             PlayerPrefs.SetInt("_passive", PlayerPrefs.GetInt("_passive") + 5);
-            PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + 250);
+            SceneManager.LoadScene("MainLVL");
         }
     }
     void Start()
@@ -29,6 +31,7 @@ public class RandomKey : MonoBehaviour
         {
             PlayerPrefs.SetInt("_needpopad", 15);
         }
+        _needpopad = PlayerPrefs.GetInt("_needpopad");
         StartCoroutine(RandomKeyCode());
     }
     private IEnumerator RandomKeyCode()
@@ -51,18 +54,15 @@ public class RandomKey : MonoBehaviour
         {
             if (Input.GetKeyUp(_key))
             {
-                Debug.Log("Popal");
                 _popadanie++;
                 _text.color = Color.green;
                 _input = true;
-
             }
             else
             {
                 _text.color = Color.red;
-                Debug.Log("Ne popal");
             }
-            yield return new WaitForSeconds(0.0001f);
+            yield return new WaitForSeconds(0.001f);
         }
             
     }

@@ -14,14 +14,13 @@ public class UPManager : MonoBehaviour
     [SerializeField] private string _playerCost; //= "_costFupgrade"
     [SerializeField] private string _playerLvl; //= "_lvlFupgrade"
     [SerializeField] private string _preferlvl;
-    [SerializeField] private int _prefer;
     [SerializeField] private int firstx;
     [SerializeField] private int _giveReputation;
     [SerializeField] private GameObject _blockImg;
     [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _sound;
     [SerializeField] private int _givescale;
-    [SerializeField] private int _needreputation;
+    [SerializeField] private string _tourment;
     [SerializeField] private GameObject _oldPC;
     [SerializeField] private GameObject _newPC;
     private int _scaleMoney;
@@ -32,7 +31,6 @@ public class UPManager : MonoBehaviour
     private bool _canUp;
     void Start()
     {
-        _prefer = PlayerPrefs.GetInt(_preferlvl);
         _lvl = PlayerPrefs.GetInt(_playerLvl);
          cost = PlayerPrefs.GetFloat(_playerCost);
         _money = PlayerPrefs.GetInt("_money");
@@ -63,13 +61,16 @@ public class UPManager : MonoBehaviour
         {
             PlayerPrefs.SetFloat(_playerCost, firstx);
         }
-        if (PlayerPrefs.GetInt(_preferlvl) >= 25 && PlayerPrefs.GetInt("_reputation") >= _needreputation)
+        if (PlayerPrefs.GetInt(_tourment) >= 1)
         {
             _blockImg.SetActive(false);
             _button.gameObject.SetActive(true);
+            Destroy(_oldPC);
+            _newPC.SetActive(true);
         }
         else
         {
+            _blockImg.SetActive(true);
             _button.gameObject.SetActive(false);
            
         }
@@ -86,9 +87,8 @@ public class UPManager : MonoBehaviour
                 {
                       _canUp = true;
                       StartCoroutine(ChangeColor(_canUp));
-                _audio.PlayOneShot(_sound);
-                _oldPC.SetActive(false);
-                      _newPC.SetActive(true);
+                       
+                    _audio.PlayOneShot(_sound);
                       _money = PlayerPrefs.GetInt("_money");
                       PlayerPrefs.SetInt("_money", Convert.ToInt32(_money - PlayerPrefs.GetFloat(_playerCost)));
                       cost = (float)(((firstx * Math.Pow(1.15, Convert.ToDouble(PlayerPrefs.GetInt(_playerLvl))))));

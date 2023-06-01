@@ -656,6 +656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Timer
       objectReference: {fileID: 0}
+    - target: {fileID: 7416658972423952822, guid: 5118c777ced6afb42b900e4ca7c3f4ed, type: 3}
+      propertyPath: _maxTime
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5118c777ced6afb42b900e4ca7c3f4ed, type: 3}
 --- !u!1 &1626716066
@@ -759,3 +763,4 @@ MonoBehaviour:
   _text: {fileID: 257460870}
   _time: 1
   _popadanie: 0
+  _needpopad: 0
