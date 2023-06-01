@@ -67,7 +67,6 @@ public class ChoseTrain : MonoBehaviour
                 StartCoroutine(ChangeColor(_canUp));
                 money -= Convert.ToInt32(zena);
                 zena = (float)(_firstX * (Math.Pow(1.45, PlayerPrefs.GetInt(_lvlTrain)) + 1));
-                PlayerPrefs.SetInt(_lvlTrain, PlayerPrefs.GetInt(_lvlTrain) + 1);
                 PlayerPrefs.SetFloat(_cost, zena);
                 PlayerPrefs.SetInt("_money", money);
                 PlayerPrefs.SetInt("_targets", 0);

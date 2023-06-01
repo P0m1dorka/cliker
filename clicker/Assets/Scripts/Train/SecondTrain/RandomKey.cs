@@ -22,6 +22,7 @@ public class RandomKey : MonoBehaviour
         if(_popadanie >= _needpopad)
         {
             PlayerPrefs.SetInt("_passive", PlayerPrefs.GetInt("_passive") + 5);
+            PlayerPrefs.SetInt("_lvlStrain", PlayerPrefs.GetInt("_lvlStrain") + 1);
             SceneManager.LoadScene("MainLVL");
         }
     }
@@ -42,7 +43,7 @@ public class RandomKey : MonoBehaviour
             _random = rnd.Next(0, 10);
             _text.text = $"{_keyArray[_random]}";
             coroutine = StartCoroutine(Check(_keyArray[_random]));
-            yield return new WaitForSeconds(_time);
+            yield return new WaitForSeconds(1f);
             StopCoroutine(coroutine);
             _input = false;
             _text.color = Color.white;

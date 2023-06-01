@@ -15,6 +15,8 @@ public class Match : MonoBehaviour
     [SerializeField] private string _nameTur;
     [SerializeField] private GameObject _lose;
     [SerializeField] private GameObject _lose2;
+    [SerializeField] private AudioSource _audioSettings;
+    [SerializeField] private AudioClip _sound;
     private int _rep;
     private void Start()
     {
@@ -48,6 +50,7 @@ public class Match : MonoBehaviour
 
     private void OnMouseDown()
     {
+        _audioSettings.PlayOneShot(_sound);
         _klicks++;
         _healtAmount -= _damage;
         _healhBar.fillAmount = _healtAmount / 100f;

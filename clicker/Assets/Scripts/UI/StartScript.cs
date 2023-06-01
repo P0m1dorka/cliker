@@ -9,8 +9,7 @@ public class StartScript : MonoBehaviour
 {
     private void Start()
     {
-        PlayerPrefs.SetInt("_firstTime", 1);
-        if (PlayerPrefs.GetInt("_firstTime") == 1)
+        if (PlayerPrefs.GetInt("_firstTime") == 0)
         {
             PlayerPrefs.SetInt("_money", 0);
             PlayerPrefs.SetInt("_reputation", 0);

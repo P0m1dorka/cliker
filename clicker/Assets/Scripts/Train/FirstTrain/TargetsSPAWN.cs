@@ -54,6 +54,7 @@ public class TargetsSPAWN : TargCheck
         {
             PlayerPrefs.SetInt("_maxtargets",maxmish+1);
             PlayerPrefs.SetInt("_passive", PlayerPrefs.GetInt("_passive") + 1);
+            PlayerPrefs.SetInt("_lvlFtrain", PlayerPrefs.GetInt("_lvlFtrain") + 1);
             SceneManager.LoadScene("MainLVL");
         }
     }

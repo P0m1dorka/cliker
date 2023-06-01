@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/FinalBoss.unity
     guid: 8a83ef79e90033f4b8f518beca898174
   - enabled: 1
-    path: Assets/Scenes/SanyaSimple.unity
+    path: Assets/Scenes/SanyaSimples.unity
     guid: 079a9ca8b58642f4a950f06f41955595
   - enabled: 1
     path: Assets/Scenes/Final.unity

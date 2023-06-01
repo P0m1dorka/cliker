@@ -32,13 +32,13 @@ public class Antichit : MonoBehaviour
             {
                 _chit = true;
                 _clicks = 0;
-                PlayerPrefs.SetInt("_firstTime", 1);
+                PlayerPrefs.SetInt("_firstTime", 0);
                 SceneManager.LoadScene("StartScene");
             }
             else
             {
-                PlayerPrefs.SetInt("_firstTime", 0);
                 _clicks = 0;
+                PlayerPrefs.SetInt("_firstTime", 1);
             }
         }
     }

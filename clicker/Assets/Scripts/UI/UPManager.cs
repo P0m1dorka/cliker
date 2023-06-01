@@ -21,8 +21,7 @@ public class UPManager : MonoBehaviour
     [SerializeField] private AudioClip _sound;
     [SerializeField] private int _givescale;
     [SerializeField] private string _tourment;
-    [SerializeField] private GameObject _oldPC;
-    [SerializeField] private GameObject _newPC;
+   
     private int _scaleMoney;
     private int _maxlvl = 25;
     private int _money;
@@ -57,7 +56,7 @@ public class UPManager : MonoBehaviour
             }
         }
         _lvlText.text = $"{PlayerPrefs.GetInt(_playerLvl)}/{_maxlvl} ";
-        if (PlayerPrefs.GetInt(_playerLvl) == 1)
+        if (PlayerPrefs.GetInt(_playerLvl) <= 1)
         {
             PlayerPrefs.SetFloat(_playerCost, firstx);
         }
@@ -65,8 +64,6 @@ public class UPManager : MonoBehaviour
         {
             _blockImg.SetActive(false);
             _button.gameObject.SetActive(true);
-            Destroy(_oldPC);
-            _newPC.SetActive(true);
         }
         else
         {
@@ -92,7 +89,11 @@ public class UPManager : MonoBehaviour
                       _money = PlayerPrefs.GetInt("_money");
                       PlayerPrefs.SetInt("_money", Convert.ToInt32(_money - PlayerPrefs.GetFloat(_playerCost)));
                       cost = (float)(((firstx * Math.Pow(1.15, Convert.ToDouble(PlayerPrefs.GetInt(_playerLvl))))));
-                      PlayerPrefs.SetInt(_playerLvl, PlayerPrefs.GetInt(_playerLvl) + 1);
+                if (PlayerPrefs.GetInt(_playerLvl) <= 1)
+                {
+                    PlayerPrefs.SetFloat(_playerCost, firstx);
+                }
+                PlayerPrefs.SetInt(_playerLvl, PlayerPrefs.GetInt(_playerLvl) + 1);
                       PlayerPrefs.SetFloat(_playerCost, cost);
                       PlayerPrefs.SetInt("_scaleMoney", PlayerPrefs.GetInt("_scaleMoney") + _givescale);
                       PlayerPrefs.SetInt("_reputation", PlayerPrefs.GetInt("_reputation") + _giveReputation);
