@@ -19,12 +19,14 @@ public class Money : MonoBehaviour
     private int _money;
     void Start()
     {
+        PlayerPrefs.SetInt("_firstTime", 1);
         scale = PlayerPrefs.GetInt("_scaleMoney");
         _money = PlayerPrefs.GetInt("_money");
         Debug.Log($"money = {_money}");
     }
     private void Update()
     {
+        PlayerPrefs.SetInt("_firstTime", 1);
         _money = PlayerPrefs.GetInt("_money");
         _moneyText.text = $"{PlayerPrefs.GetInt("_money")}";
         if (_money > 999 && _money<=999999)

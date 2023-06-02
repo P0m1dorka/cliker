@@ -15,7 +15,7 @@ public class Buy : MonoBehaviour
 
     private void BuyAlmaz()
     {
-        if (PlayerPrefs.GetInt("_reputation") >= 100)
+        if (PlayerPrefs.GetInt("_reputation") >= 4000)
         {
             PlayerPrefs.SetInt("_reputation", 0);
             PlayerPrefs.SetInt("_almazi", 100);

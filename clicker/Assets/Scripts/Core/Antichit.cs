@@ -27,7 +27,7 @@ public class Antichit : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
             if(_clicks >= _maxClicks)
             {
                 _chit = true;

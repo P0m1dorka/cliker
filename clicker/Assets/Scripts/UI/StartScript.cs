@@ -9,6 +9,7 @@ public class StartScript : MonoBehaviour
 {
     private void Start()
     {
+        
         if (PlayerPrefs.GetInt("_firstTime") == 0)
         {
             PlayerPrefs.SetInt("_money", 0);
@@ -42,6 +43,7 @@ public class StartScript : MonoBehaviour
             PlayerPrefs.SetFloat("_openAudio", 1f);
             PlayerPrefs.SetFloat("_closeAudio", 1f);
         }
+        
     }
     void Update()
     {
